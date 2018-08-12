@@ -6,27 +6,6 @@ description = Changes the resolution of the game.
 version = 3
 // Performance
 
-#[TextureRedefine] # increase colour depth, slower but less banding
-#formats  = 0x816
-#overwriteFormat =  0x820
-
-#[TextureRedefine] #
-#formats  = 0x810
-#overwriteFormat =  0x81e
-
-#[TextureRedefine] #
-#formats  = 0x806
-#overwriteFormat =  0x80e
-
-#[TextureRedefine] #
-#formats  = 0x007
-#overwriteFormat =  0x00f
-
-#[TextureRedefine] #lod override, shimmer and possible sharper textures
-#formats  = 0x31,0x32,0x33,0x34,0x35,0x431,0x432,0x433,0x434,0x435
-#overwriteRelativeLodBias = -1 # 
-
-
 [Preset]
 name = 1280x720 (Native)
 $width = 1280
@@ -110,21 +89,20 @@ $gameHeight = 720
 [TextureRedefine]
 width = 1280
 height = 720
-#formats =  0x816,0x810,0x41a,0x008,0x001,0x01a
+#formats = 0x816,0x810,0x41a,0x008,0x001,0x01a
 formatsExcluded = 0x031 #NLA flyover XCX logo screen
 tileModesExcluded = 0x001
 overwriteWidth = ($width / $gameWidth) * 1280
-overwriteHeight  = ($height/$gameHeight) * 720
+overwriteHeight = ($height/$gameHeight) * 720
 
-[TextureRedefine] #May unintentionally scale textures, check formatsExcluded
+[TextureRedefine] # shadows
 width = 1024
 height = 1024
-formats = 0x005 #0x034,0x031,0x005
+formats = 0x005 
 overwriteWidth = ($width / $gameWidth) * 1024
 overwriteHeight = ($height/$gameHeight) * 1024
 
-
-[TextureRedefine] #May unintentionally scale textures, check formatsExcluded
+[TextureRedefine] #ingame menu
 width = 1024
 height = 720
 tileModesExcluded = 0x001
@@ -132,14 +110,13 @@ tileModesExcluded = 0x001
 overwriteWidth = ($width / $gameWidth) * 1024
 overwriteHeight = ($height/$gameHeight) * 720
 
-
 [TextureRedefine]
 width = 864
 height = 480
 #formats = 
 formatsExcluded = 0x431,0x035,0x034,0x033,0x031
 overwriteWidth = ($width / $gameWidth) * 864
-overwriteHeight  = ($height/$gameHeight) * 480
+overwriteHeight = ($height/$gameHeight) * 480
 
 [TextureRedefine]
 width = 854
@@ -147,36 +124,27 @@ height = 480
 #formats = 
 formatsExcluded = 0x431,0x035,0x034,0x033,0x031
 overwriteWidth = ($width / $gameWidth) * 854
-overwriteHeight  = ($height/$gameHeight) * 480
-
+overwriteHeight = ($height/$gameHeight) * 480
 
 [TextureRedefine]
 width = 640
 height = 368
-###formats =  0x820,0x816,0x007,0x001 # 07 = dark 0x001,0x80e
-#formatsExcluded = 0x80e,0x007
-##formatsExcluded = 0x007,0x80e,0x41A,0x033,0x031 #dialog prompt fixes, XCX Logo NLA  exclude obvious textures
-##tileModesExcluded = 0x001
-formatsExcluded = 0x431,0x035,0x034,0x033,0x031
+formatsExcluded = 0x431,0x035,0x034,0x033,0x031 #dialog prompt fixes, XCX Logo NLA
 overwriteWidth = ($width / $gameWidth) * 640
-overwriteHeight  = ($height/$gameHeight) * 368
+overwriteHeight = ($height/$gameHeight) * 368
 
 [TextureRedefine]
 width = 640
 height = 360
-###formats =  0x820,0x816,0x007,0x001 # 07 = dark 0x001,0x80e
-#formatsExcluded = 0x80e,0x007
-##formatsExcluded = 0x007,0x80e,0x41A,0x033,0x031 #dialog prompt fixes, XCX Logo NLA  exclude obvious textures
-tileModesExcluded = 0x001
+tileModesExcluded = 0x001 # fmv sub colour
 formatsExcluded = 0x431,0x035,0x034,0x033,0x031
 overwriteWidth = ($width / $gameWidth) * 640
-overwriteHeight  = ($height/$gameHeight) * 360
+overwriteHeight = ($height/$gameHeight) * 360
 
-
-[TextureRedefine] #May unintentionally scale textures, check formatsExcluded
+[TextureRedefine] # shadows
 width = 512
 height = 512
-formats =  0x005 #0x431,0x035,0x031,0x005
+formats = 0x005
 overwriteWidth = ($width / $gameWidth) * 512
 overwriteHeight = ($height/$gameHeight) * 512
 
@@ -185,37 +153,33 @@ width = 512
 height = 288
 #formats = 
 overwriteWidth = ($width / $gameWidth) * 512
-overwriteHeight  = ($height/$gameHeight) * 288
+overwriteHeight = ($height/$gameHeight) * 288
 
 [TextureRedefine] # fog 
 width = 448
 height = 240
 overwriteWidth = ($width / $gameWidth) * 448
-overwriteHeight  = ($height/$gameHeight) * 240
-
-
+overwriteHeight = ($height/$gameHeight) * 240
 
 [TextureRedefine] # fog
 width = 426
 height = 240
-overwriteWidth = ($width / $gameWidth) * 426 #408 #426
-overwriteHeight  = ($height/$gameHeight) * 240
-
+overwriteWidth = ($width / $gameWidth) * 426
+overwriteHeight = ($height/$gameHeight) * 240
 
 [TextureRedefine] # #Bloom, DOF
 width = 320
 height = 192
 formatsExcluded = 0x431,0x035,0x034,0x033,0x031
 overwriteWidth = ($width / $gameWidth) * 320
-overwriteHeight  = ($height/$gameHeight) * 192
+overwriteHeight = ($height/$gameHeight) * 192
 
-[TextureRedefine] #Bloom, DOF 
+[TextureRedefine] # Bloom, DOF 
 width = 320
 height = 180
 formatsExcluded = 0x431,0x035,0x034,0x033,0x031
 overwriteWidth = ($width / $gameWidth) * 320
-overwriteHeight  = ($height/$gameHeight) * 180
-
+overwriteHeight = ($height/$gameHeight) * 180
 
 [TextureRedefine]
 width = 256
@@ -231,8 +195,8 @@ height = 256
 formats = 0x810 #,0x011 #0x816
 overwriteWidth = ($width/$gameWidth) * 256
 overwriteHeight = ($height/$gameHeight) * 256
-#
-[TextureRedefine]
+
+[TextureRedefine]# sky
 width = 255
 height = 255
 formats = 0x810
@@ -240,27 +204,26 @@ formats = 0x810
 overwriteWidth = ($width/$gameWidth) * 255
 overwriteHeight = ($height/$gameHeight) * 255
 
-[TextureRedefine]
+[TextureRedefine] # Bloom
 width = 160
 height = 96
-###formats =  0x816
+###formats = 0x816
 formatsExcluded = 0x431,0x035,0x034,0x033,0x031
 overwriteWidth = ($width / $gameWidth) * 160
-overwriteHeight  = ($height/$gameHeight) * 96
+overwriteHeight = ($height/$gameHeight) * 96
 
-[TextureRedefine]
+[TextureRedefine] #bloom
 width = 160
 height = 90
-###formats =  0x816
+###formats = 0x816
 formatsExcluded = 0x431,0x035,0x034,0x033,0x031
 overwriteWidth = ($width / $gameWidth) * 160
-overwriteHeight  = ($height/$gameHeight) * 90
+overwriteHeight = ($height/$gameHeight) * 90
 
-#
-[TextureRedefine] #
+[TextureRedefine] # 
 width = 128
 height = 128
-#formats =  0x806 #,0x035,0x034,0x033,0x031
+#formats = 0x806 #,0x035,0x034,0x033,0x031
 formatsExcluded = 0x431,0x035,0x034,0x033,0x031
 overwriteWidth = ($width / $gameWidth) * 128
 overwriteHeight = ($height/$gameHeight) * 128
@@ -269,56 +232,50 @@ overwriteHeight = ($height/$gameHeight) * 128
 width = 127
 height = 127
 formatsExcluded = 0x431,0x035,0x034,0x033,0x031
-###formats =  0x80e # 0x820,0x816 #,0x035,0x034,0x033,0x032,0x031
+###formats = 0x80e # 0x820,0x816 #,0x035,0x034,0x033,0x032,0x031
 overwriteWidth = ($width / $gameWidth) * 127
 overwriteHeight = ($height/$gameHeight) * 127
 
-
-#
 [TextureRedefine]
 width = 96
 height = 48
-###formats =  0x816
+###formats = 0x816
 formatsExcluded = 0x431,0x035,0x034,0x033,0x031
 overwriteWidth = ($width / $gameWidth) * 96
-overwriteHeight  = ($height/$gameHeight) * 48
-
+overwriteHeight = ($height/$gameHeight) * 48
 
 [TextureRedefine]
 width = 80
 height = 46
-###formats =  0x816
+###formats = 0x816
 formatsExcluded = 0x431,0x035,0x034,0x033,0x031
 overwriteWidth = ($width / $gameWidth) * 80
-overwriteHeight  = ($height/$gameHeight) * 46
-
+overwriteHeight = ($height/$gameHeight) * 46
 
 [TextureRedefine] 
 width = 64
 height = 64
-###formats =  0x820,0x816 #,0x035,0x034,0x033,0x032,0x031
+###formats = 0x820,0x816 #,0x035,0x034,0x033,0x032,0x031
 formatsExcluded = 0x431,0x035,0x034,0x033,0x031
 overwriteWidth = ($width / $gameWidth) * 64
 overwriteHeight = ($height/$gameHeight) * 64
 
-
-#
-[TextureRedefine] #
+[TextureRedefine] 
 width = 64
 height = 32
-###formats =  0x806 #0x820,0x816 #,0x035,0x034,0x033,0x032,0x031
+###formats = 0x806 #0x820,0x816 #,0x035,0x034,0x033,0x032,0x031
 formatsExcluded = 0x431,0x035,0x034,0x033,0x031
 overwriteWidth = ($width / $gameWidth) * 64
 overwriteHeight = ($height/$gameHeight) * 32
 
-[TextureRedefine] #May unintentionally scale textures, check formatsExcluded
+[TextureRedefine] 
 width = 64
 height = 32
-###formats =  0x820,0x816 #,0x035,0x034,0x033,0x032,0x031
+###formats = 0x820,0x816 #,0x035,0x034,0x033,0x032,0x031
 formatsExcluded = 0x431,0x035,0x034,0x033,0x031
 overwriteWidth = ($width / $gameWidth) * 64
 overwriteHeight = ($height/$gameHeight) * 64
-#
+
 [TextureRedefine] #
 width = 32
 height = 32
@@ -326,21 +283,19 @@ formats = 0x806 #001a breaks flashlight scene
 overwriteWidth = ($width / $gameWidth) * 32
 overwriteHeight = ($height/$gameHeight) * 32
 
-[TextureRedefine] #May unintentionally scale textures, check formatsExcluded
+[TextureRedefine] 
 width = 32
 height = 16
 ##formats 0x816
-##formatsExcluded =  0x034,0x033,0x031,0x01a
+##formatsExcluded = 0x034,0x033,0x031,0x01a
 formatsExcluded = 0x431,0x035,0x034,0x033,0x031
 overwriteWidth = ($width / $gameWidth) * 32
 overwriteHeight = ($height/$gameHeight) * 32
 
-
-#
 [TextureRedefine] #
 width = 16
 height = 8
-###formats =  0x008,0x806,0x80e # ,0x431,0x031
+###formats = 0x008,0x806,0x80e # ,0x431,0x031
 formatsExcluded = 0x431,0x035,0x034,0x033,0x031
 overwriteWidth = ($width / $gameWidth) * 16
 overwriteHeight = ($height/$gameHeight) * 8
@@ -348,24 +303,23 @@ overwriteHeight = ($height/$gameHeight) * 8
 [TextureRedefine] #
 width = 8
 height = 8
-##formats =  0x806,0x81e,0x80e # ,0x431,0x031
+##formats = 0x806,0x81e,0x80e # ,0x431,0x031
 formatsExcluded = 0x431,0x035,0x034,0x033,0x031
 overwriteWidth = ($width / $gameWidth) * 8
 overwriteHeight = ($height/$gameHeight) * 8
 
-#
-[TextureRedefine] #May unintentionally scale textures, check formatsExcluded
+[TextureRedefine] 
 width = 4
 height = 4
-###formats =  0x81e,0x80e
+###formats = 0x81e,0x80e
 formatsExcluded = 0x431,0x035,0x034,0x033,0x031
 overwriteWidth = ($width / $gameWidth) * 4
 overwriteHeight = ($height/$gameHeight) * 4
-#
-[TextureRedefine] #May unintentionally scale textures, check formatsExcluded
+
+[TextureRedefine] 
 width = 1
 height = 1
-###formats =  0x008,0x81e,0x01a
+###formats = 0x008,0x81e,0x01a
 formatsExcluded = 0x431,0x035,0x034,0x033,0x031
 overwriteWidth = ($width / $gameWidth) * 1
 overwriteHeight = ($height/$gameHeight) * 1

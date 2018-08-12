@@ -5,27 +5,9 @@ path = "Tokyo Mirage Sessions FE/Graphics/Resolution "
 description = Changes the resolution of the game.
 version = 3
 
-#[TextureRedefine] # increase colour depth, slower but less banding
-#formats  = 0x816
-#overwriteFormat =  0x820
-
-#[TextureRedefine] #
-#formats  = 0x810
-#overwriteFormat =  0x81e
-
-#[TextureRedefine] #
-#formats  = 0x806
-#overwriteFormat =  0x80e
-
-#[TextureRedefine] #
-#formats  = 0x007
-#overwriteFormat =  0x00f
-
 #[TextureRedefine] #lod override, shimmer and possible sharper textures
-#formats  = 0x31,0x32,0x33,0x34,0x35,0x431,0x432,0x433,0x434,0x435
-#overwriteRelativeLodBias = -1 # 
-
-
+#formats  = 0x01a,0x31,0x32,0x33,0x34,0x35,0x431,0x432,0x433,0x434,0x435
+#overwriteRelativeLodBias = -4 #
 
 [Preset]
 name = 1280x720 (Native)
@@ -83,7 +65,6 @@ $height = 1800
 $gameWidth = 1280
 $gameHeight = 720
 
-
 [Preset]
 name = 5120x2880
 $width = 5120
@@ -105,12 +86,11 @@ $height = 5760
 $gameWidth = 1280
 $gameHeight = 720
 
-
 [TextureRedefine]
 width = 1280
 height = 720
-#formatsExcluded = 0x816
 #formats =  0x816,0x80e,0x01a,0x001
+tileModesExcluded = 0x001
 overwriteWidth = ($width / $gameWidth) * 1280
 overwriteHeight  = ($height/$gameHeight) * 720
 
@@ -121,22 +101,19 @@ height = 340
 overwriteWidth = ($width / $gameWidth) * 1280
 overwriteHeight  = ($height/$gameHeight) * 340
 
-
-[TextureRedefine]
-width = 1024
-height = 2048
-formatsExcluded =  0x433,0x431,0x235,0x035,0x034,0x033,0x031,0x01a
-#formats =  0x433,0x011,0x01a
-overwriteWidth = ($width / $gameWidth) * 1024
-overwriteHeight  = ($height/$gameHeight) * 2048
-
-[TextureRedefine] #May unintentionally scale textures, check formatsExcluded
-width = 1024
-height = 1024
-formatsExcluded =  0x433,0x431,0x235,0x035,0x034,0x033,0x031,0x01a
-#formatsExcluded =  0x433,0x431,0x235,0x035,0x034,0x031,0x011,0x01a
-overwriteWidth = ($width / $gameWidth) * 1024
-overwriteHeight = ($height/$gameHeight) * 1024
+#[TextureRedefine] # Shadows cemu scaling broken?
+#width = 1024
+#height = 2048
+#formats = 0x011,0x811
+#overwriteWidth = ($width / $gameWidth) * 1024
+#overwriteHeight  = ($height/$gameHeight) * 2048
+ 
+#[TextureRedefine] #Shadows, cemu scaling broken?
+#width = 1024
+#height = 1024
+#formats = 0x011,0x811
+#overwriteWidth = ($width / $gameWidth) * 1024
+#overwriteHeight = ($height/$gameHeight) * 1024
 
 [TextureRedefine]
 width = 1014
@@ -152,6 +129,26 @@ height = 480
 overwriteWidth = ($width / $gameWidth) * 864
 overwriteHeight  = ($height/$gameHeight) * 480
 
+[TextureRedefine] # Pad
+width = 854
+height = 480
+#formats = 
+overwriteWidth = ($width / $gameWidth) * 854
+overwriteHeight  = ($height/$gameHeight) * 480
+
+[TextureRedefine] # Pad
+width = 674
+height = 574
+formats = 0x01a
+overwriteWidth = ($width / $gameWidth) * 657
+overwriteHeight  = ($height/$gameHeight) * 574
+
+[TextureRedefine] # Pad
+width = 657
+height = 574
+formats = 0x01a
+overwriteWidth = ($width / $gameWidth) * 657
+overwriteHeight  = ($height/$gameHeight) * 574
 
 [TextureRedefine]
 width = 640
@@ -171,9 +168,9 @@ overwriteHeight  = ($height/$gameHeight) * 368
 width = 640
 height = 360
 #formats =  0x816,0x001
+tileModesExcluded = 0x001
 overwriteWidth = ($width / $gameWidth) * 640
 overwriteHeight  = ($height/$gameHeight) * 360
-
 
 [TextureRedefine]
 width = 320
@@ -182,6 +179,12 @@ formats =  0x816
 overwriteWidth = ($width / $gameWidth) * 320
 overwriteHeight  = ($height/$gameHeight) * 192
 
+[TextureRedefine]
+width = 320
+height = 180
+formats =  0x816
+overwriteWidth = ($width / $gameWidth) * 320
+overwriteHeight  = ($height/$gameHeight) * 180
 
 [TextureRedefine]
 width = 160
@@ -196,4 +199,3 @@ height = 120
 formats =  0x816
 overwriteWidth = ($width / $gameWidth) * 160
 overwriteHeight  = ($height/$gameHeight) * 120
-

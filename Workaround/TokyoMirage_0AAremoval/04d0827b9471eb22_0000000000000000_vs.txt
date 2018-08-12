@@ -3,8 +3,7 @@
 #extension GL_ARB_separate_shader_objects : enable
 #extension GL_ARB_shading_language_packing : enable
 // shader 04d0827b9471eb22
-const float resXScale = 3.0;
-const float resYScale = 3.0;
+
 uniform ivec4 uf_remappedVS[1];
 uniform vec2 uf_windowSpaceToClipSpaceTransform;
 layout(location = 0) in uvec4 attrDataSem0;
@@ -57,9 +56,9 @@ R3f.x = R2f.x;
 R3f.y = R2f.y;
 PV0f.z = intBitsToFloat(uf_remappedVS[0].z) + 0.0;
 // 1
-R127f.z = mul_nonIEEE(intBitsToFloat(uf_remappedVS[0].y) / resYScale, PV0f.z);
+R127f.z = mul_nonIEEE(intBitsToFloat(uf_remappedVS[0].y), PV0f.z);
 PV1f.z = R127f.z;
-PV1f.w = mul_nonIEEE(intBitsToFloat(uf_remappedVS[0].x) / resXScale, PV0f.z);
+PV1f.w = mul_nonIEEE(intBitsToFloat(uf_remappedVS[0].x), PV0f.z);
 // 2
 PV0f.x = R2f.y + PV1f.z;
 PV0f.y = R2f.x + PV1f.w;

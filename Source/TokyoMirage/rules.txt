@@ -1,7 +1,7 @@
 [Definition]
 titleIds = 00050000101ED700,00050000101ED800,0005000010131D00
 name = Resolution
-path = "Tokyo Mirage Sessions FE/Graphics/Resolution " 
+path = "Tokyo Mirage Sessions FE/Graphics/Resolution" 
 description = Changes the resolution of the game.
 version = 3
 

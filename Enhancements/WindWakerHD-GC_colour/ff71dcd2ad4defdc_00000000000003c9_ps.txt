@@ -2,7 +2,7 @@
 #extension GL_ARB_texture_gather : enable
 // shader ff71dcd2ad4defdc
 //AA ps
-const float resScale = 4.0;
+const float resScale = 2.0;
 
 //old contrasty, or just copy paste clarity
 const float gamma = 0.85; // 1.0 is neutral  Botw is already colour graded at this stage

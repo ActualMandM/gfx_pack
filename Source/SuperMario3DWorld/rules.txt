@@ -1,8 +1,8 @@
 [Definition]
-titleIds = 000500001010ec00,000500001010ed00,000500001010eb00
+titleIds = 0005000010145D00,0005000010145C00,0005000010106100
 name = Resolution
-path = "Mario Kart 8/Graphics/Resolution"
-description = Changes the resolution of the game. Known issues: 3-4P upscaling works but misses shadows.
+path = "Super Mario 3D World/Graphics/Resolution"
+description = Changes the resolution of the game. Known issues: Depth of field isn't upscaled yet, "zoom-transitions" are also not upscaled yet.
 version = 3
 
 // Performance
@@ -114,46 +114,12 @@ $gameHeight = 720
 [TextureRedefine]
 width = 1280
 height = 720
-formatsExcluded =  0x41A,0x431 # exclude the intro background texture, race end background
-tileModesExcluded = 0x001
+formatsExcluded = 0x008,0x41A,0x034,0x035 # exclude obvious textures
+#formats = 0x01a,0x019,0x80e,0x816
 overwriteWidth = ($width/$gameWidth) * 1280
 overwriteHeight = ($height/$gameHeight) * 720
 
-# 2P Full Res
-[TextureRedefine]
-width = 640
-height = 720
-formats = 0x019,0x816,0x806,0x80e
-overwriteWidth = ($width/$gameWidth) * 640
-overwriteHeight = ($height/$gameHeight) * 720
-
-
-# 3-4P Full Res
-[TextureRedefine]
-width = 640
-height = 368
-tileModesExcluded = 0x001
-formats = 0x019,0x816,0x806,0x80e
-overwriteWidth = ($width/$gameWidth) * 640
-overwriteHeight = ($height/$gameHeight) * 368
-
-[TextureRedefine]
-width = 640
-height = 360
-formats = 0x816
-tileModesExcluded = 0x001
-overwriteWidth = ($width/$gameWidth) * 640
-overwriteHeight = ($height/$gameHeight) * 360
-
-[TextureRedefine]
-width = 512
-height = 256
-formats = 0x816
-overwriteWidth = ($width/$gameWidth) * 512
-overwriteHeight = ($height/$gameHeight) * 256
-
-
-# Blur in menu's
+# Bloom
 [TextureRedefine]
 width = 320
 height = 180
@@ -167,54 +133,6 @@ height = 192
 formats = 0x816
 overwriteWidth = ($width/$gameWidth) * 320
 overwriteHeight = ($height/$gameHeight) * 192
-
-
-# Menu HUD
-[TextureRedefine]
-width = 854
-height = 480
-formats = 0x816
-overwriteWidth = ($width/$gameWidth) * 854
-overwriteHeight = ($height/$gameHeight) * 480
-
-[TextureRedefine]
-width = 864
-height = 480
-formats = 0x816,0x019
-overwriteWidth = ($width/$gameWidth) * 864
-overwriteHeight = ($height/$gameHeight) * 480
-
-
-# Blurred backgrounds in menu
-[TextureRedefine]
-width = 320
-height = 180
-formats = 0x816
-overwriteWidth = ($width/$gameWidth) * 320
-overwriteHeight = ($height/$gameHeight) * 180
-
-[TextureRedefine]
-width = 320
-height = 192
-formats = 0x816
-overwriteWidth = ($width/$gameWidth) * 320
-overwriteHeight = ($height/$gameHeight) * 192
-
-
-# Particles/highlights
-[TextureRedefine]
-width = 320
-height = 192
-formats = 0x019
-overwriteWidth = ($width/$gameWidth) * 320
-overwriteHeight = ($height/$gameHeight) * 192
-
-[TextureRedefine]
-width = 320
-height = 180
-formats = 0x019
-overwriteWidth = ($width/$gameWidth) * 320
-overwriteHeight = ($height/$gameHeight) * 180
 
 [TextureRedefine]
 width = 256
@@ -225,10 +143,10 @@ overwriteHeight = ($height/$gameHeight) * 128
 
 [TextureRedefine]
 width = 160
-height = 90
+height = 96
 formats = 0x816
 overwriteWidth = ($width/$gameWidth) * 160
-overwriteHeight = ($height/$gameHeight) * 90
+overwriteHeight = ($height/$gameHeight) * 96
 
 [TextureRedefine]
 width = 160
@@ -245,11 +163,11 @@ overwriteWidth = ($width/$gameWidth) * 128
 overwriteHeight = ($height/$gameHeight) * 64
 
 [TextureRedefine]
-width = 40
-height = 22
+width = 96
+height = 48
 formats = 0x816
-overwriteWidth = ($width/$gameWidth) * 40
-overwriteHeight = ($height/$gameHeight) * 22
+overwriteWidth = ($width/$gameWidth) * 96
+overwriteHeight = ($height/$gameHeight) * 48
 
 [TextureRedefine]
 width = 64
@@ -258,16 +176,19 @@ formats = 0x816
 overwriteWidth = ($width/$gameWidth) * 64
 overwriteHeight = ($height/$gameHeight) * 32
 
-[TextureRedefine]
-width = 80
-height = 45
-formats = 0x816
-overwriteWidth = ($width/$gameWidth) * 80
-overwriteHeight = ($height/$gameHeight) * 45
 
-[TextureRedefine]
-width = 96
-height = 48
-formats = 0x816
-overwriteWidth = ($width/$gameWidth) * 96
-overwriteHeight = ($height/$gameHeight) * 48
+# Depth of field, enabling breaks game
+#[TextureRedefine]
+#width = 640
+#height = 368
+#formats = 0x816
+#overwriteWidth = ($width/$gameWidth) * 640
+#overwriteHeight = ($height/$gameHeight) * 368
+
+#[TextureRedefine]
+#width = 512
+#height = 256
+#formats = 0x816
+#overwriteWidth = ($width/$gameWidth) * 512
+#overwriteHeight = ($height/$gameHeight) * 256
+

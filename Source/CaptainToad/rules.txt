@@ -204,7 +204,7 @@ formats = 0x816
 overwriteWidth = ($width/$gameWidth) * 576
 overwriteHeight = ($height/$gameHeight) * 368
 
-[TextureRedefine] #816 fire transition, 80e?
+[TextureRedefine] #816 fire transition, ?
 width = 512
 height = 512
 formats = 0x816 # #0x431,0x235,0x034
@@ -373,12 +373,12 @@ formats = 0x816
 overwriteWidth = ($width/$gameWidth) * 128
 overwriteHeight = ($height/$gameHeight) * 64
 
-[TextureRedefine] #haze
-width = 128
-height = 16
-formats = 0x823
-overwriteWidth = ($width/$gameWidth) * 128
-overwriteHeight = ($height/$gameHeight) * 16
+#[TextureRedefine] #haze
+#width = 128
+#height = 16
+#formats = 0x823
+#overwriteWidth = ($width/$gameWidth) * 128
+#overwriteHeight = ($height/$gameHeight) * 16
 
 [TextureRedefine]
 width = 125

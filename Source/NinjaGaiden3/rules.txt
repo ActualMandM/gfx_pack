@@ -1,7 +1,7 @@
 [Definition]
 titleIds = 0005000010110900,0005000010110A00,0005000010110B00
 name = Resolution
-path = "Ninja Gaiden 3: Razors Edge/Graphics/Resolution " 
+path = "Ninja Gaiden 3: Razors Edge/Graphics/Resolution" 
 description = Changes the resolution of the game. Known issues: Videos are broken, game is unstable, button inputs missing (prob incorrect scaling)
 version = 3
 
@@ -120,7 +120,8 @@ $gameHeight = 720
 width = 1280
 height = 720
 #formats = 0x80e,0x001,0x01a
-#tileModesExcluded = 0x001 # intro fix
+#formatsExcluded = 0x01a # Menu BG, cutscene uses as light
+tileModesExcluded = 0x001 # intro fix
 overwriteWidth = ($width/$gameWidth) * 1280
 overwriteHeight = ($height/$gameHeight) * 720
 
@@ -162,6 +163,7 @@ overwriteHeight = ($height/$gameHeight) * 368
 [TextureRedefine]
 width = 640
 height = 360
+#tileModesExcluded = 0x001 # intro fix
 #formats = 0x007,0x01a
 overwriteWidth = ($width/$gameWidth) * 640
 overwriteHeight = ($height/$gameHeight) * 360
@@ -180,12 +182,12 @@ height = 240
 overwriteWidth = ($width/$gameWidth) * 448
 overwriteHeight = ($height/$gameHeight) * 240
 
-[TextureRedefine] # cinematic blur
-width = 448
-height = 224
+#[TextureRedefine] # Controller cut-out, not used for depth?
+#width = 448
+#height = 224
 #formats = 0x001
-overwriteWidth = ($width/$gameWidth) * 448
-overwriteHeight = ($height/$gameHeight) * 224
+#overwriteWidth = ($width/$gameWidth) * 448
+#overwriteHeight = ($height/$gameHeight) * 224
 
 [TextureRedefine]
 width = 426
@@ -278,14 +280,21 @@ overwriteHeight = ($height/$gameHeight) * 90
 #overwriteWidth = ($width/$gameWidth) * 32
 #overwriteHeight = ($height/$gameHeight) * 32
 
-[TextureRedefine] # Find light
+[TextureRedefine] # light
 width = 32
 height = 344
 formats = 0x820 #0x033,0x031
 overwriteWidth = ($width/$gameWidth) * 32
 overwriteHeight = ($height/$gameHeight) * 344
 
-[TextureRedefine] # Find light
+[TextureRedefine]
+width = 32
+height = 144
+formats = 0x820
+overwriteWidth = ($width/$gameWidth) * 32
+overwriteHeight = ($height/$gameHeight) * 144
+
+[TextureRedefine] # light
 width = 32
 height = 80
 formats = 0x820 #0x033,0x031
@@ -327,7 +336,7 @@ overwriteHeight = ($height/$gameHeight) * 9
 #overwriteWidth = ($width/$gameWidth) * 16
 #overwriteHeight = ($height/$gameHeight) * 16
 
-[TextureRedefine] #findlight
+[TextureRedefine] #light
 width = 12
 height = 72
 formats = 0x820

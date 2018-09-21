@@ -24,26 +24,27 @@ description = Test
 $redScale = 1.0
 $greenScale = 1.0
 $blueScale = 1.0
-$hazeFactor = 0.0
-$bloom = 0.5
-$gamma  = 1.0
-$exposure = 0.9
+$hazeFactor = 0.65
+$bloom = 0.65
+$gamma  = 0.9
+$exposure = 0.975
 $vibrance  = 0.0
 $crushContrast = 0.0
-$bleach = 1.0
+$bleach = 0.5
+
 
 [Preset]
 name = Colour n blues
-$redScale = 0.9
+$redScale = 0.95
 $greenScale = 1.02
 $blueScale = 1.15
-$hazeFactor = 0.8
+$hazeFactor = 0.7
 $bloom = 0.9
 $gamma  = 0.9
-$exposure = 0.975
-$vibrance  = 0.5
+$exposure = 0.95
+$vibrance  = 0.45
 $crushContrast = 0.0
-$bleach = 1.0
+$bleach = 0.3
 
 
 [Preset]
@@ -70,7 +71,7 @@ $gamma  = 0.85
 $exposure = 0.9
 $vibrance  = 0.8
 $crushContrast = 0.0
-$bleach = 0.7
+$bleach = 0.4
 
 [Preset]
 name = debug

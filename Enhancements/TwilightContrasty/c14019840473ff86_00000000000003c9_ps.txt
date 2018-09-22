@@ -12,6 +12,12 @@ const float exposure = $exposure; // 1.0 is neutral
 const float vibrance = $vibrance;  // 0.0 is neutral  
 const float crushContrast = $crushContrast; // 0.0 is neutral. Use small increments, loss of shadow detail 
 
+float Sigmoid (float x) {
+
+    return 1.0 / (1.0 + (exp(-(x - 0.5) * 5.5))); 
+}
+
+
 vec3 contrasty(vec3 colour){
 	vec3 fColour = (colour.xyz);
 fColour.x = fColour.x *redScale;
@@ -156,7 +162,7 @@ R0f.y = PV0f.z * 0.25;
 R0f.z = PV0f.y * 0.25;
 R0f.w = PV0f.x * 0.25;
 // export
-
+//R0f.xyz = vec3(Sigmoid(R0f.x), Sigmoid(R0f.y),Sigmoid(R0f.z));
 R0f.xyz = contrasty(R0f.xyz);
 
 passPixelColor0 = vec4(R0f.x, R0f.y, R0f.z, R0f.w);

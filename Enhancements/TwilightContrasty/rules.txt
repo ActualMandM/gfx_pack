@@ -37,11 +37,24 @@ name = Colour n blues
 $redScale = 0.95
 $greenScale = 1.02
 $blueScale = 1.15
-$hazeFactor = 0.75
-$bloom = 0.9
+$hazeFactor = 0.8
+$bloom = 0.8
 $gamma  = 0.95
 $exposure = 1.0
 $vibrance  = 0.5
+$crushContrast = 0.0
+$bleach = 0.25
+
+[Preset]
+name = Colour n blues saturated
+$redScale = 0.95
+$greenScale = 1.04
+$blueScale = 1.17
+$hazeFactor = 0.8
+$bloom = 0.8
+$gamma  = 0.975
+$exposure = 0.95
+$vibrance  = 0.75
 $crushContrast = 0.0
 $bleach = 0.25
 
@@ -54,7 +67,7 @@ $hazeFactor = 0.5
 $bloom = 0.9
 $gamma  = 0.9
 $exposure = 0.97
-$vibrance  = 0.65
+$vibrance  = 0.75
 $crushContrast = 0.0
 $bleach = 0.2
 

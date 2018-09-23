@@ -24,52 +24,67 @@ description = Test
 $redScale = 1.0
 $greenScale = 1.0
 $blueScale = 1.0
-$hazeFactor = 0.75
+$hazeFactor = 0.8
 $bloom = 0.95
 $gamma  = 0.9
-$exposure = 1.02
+$exposure = 1.01
 $vibrance  = 0.0
 $crushContrast = 0.0
-$bleach = 0.5
+$bleach = 0.75
 
 [Preset]
-name = Colour n blues
+name = Neutral warm
 $redScale = 0.95
 $greenScale = 1.02
 $blueScale = 1.15
-$hazeFactor = 0.8
+$hazeFactor = 0.85
 $bloom = 0.8
 $gamma  = 0.95
 $exposure = 1.0
 $vibrance  = 0.5
 $crushContrast = 0.0
-$bleach = 0.25
+$bleach = 0.5
 
 [Preset]
-name = Colour n blues saturated
+name = Neutral warm clear n saturated
 $redScale = 0.95
 $greenScale = 1.04
 $blueScale = 1.17
-$hazeFactor = 0.8
+$hazeFactor = 0.75
 $bloom = 0.8
 $gamma  = 0.975
 $exposure = 0.95
 $vibrance  = 0.75
 $crushContrast = 0.0
-$bleach = 0.25
+$bleach = 0.35
 
 [Preset]
-name = Colour n blues II
+name = Neutral cold
 $redScale = 0.975
 $greenScale = 1.1
 $blueScale = 1.25
-$hazeFactor = 0.5
+$hazeFactor = 0.9
+$bloom = 0.9
+$gamma  = 0.9
+$exposure = 0.97
+$vibrance  = 0.5
+$crushContrast = 0.0
+$bleach = 0.5
+
+
+[Preset]
+name = Neutral cold clear
+$redScale = 0.975
+$greenScale = 1.1
+$blueScale = 1.25
+$hazeFactor = 0.1
 $bloom = 0.9
 $gamma  = 0.9
 $exposure = 0.97
 $vibrance  = 0.75
 $crushContrast = 0.0
-$bleach = 0.2
+$bleach = 0.35
+
 
 [Preset]
 name = Intro white point

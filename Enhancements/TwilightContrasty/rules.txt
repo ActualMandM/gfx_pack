@@ -37,7 +37,7 @@ name = Neutral warm
 $redScale = 0.95
 $greenScale = 1.02
 $blueScale = 1.15
-$hazeFactor = 0.85
+$hazeFactor = 0.875
 $bloom = 0.85
 $gamma  = 0.95
 $exposure = 1.0
@@ -47,10 +47,10 @@ $bleach = 0.4
 
 [Preset]
 name = Neutral warm clear n saturated
-$redScale = 0.95
-$greenScale = 1.04
-$blueScale = 1.17
-$hazeFactor = 0.75
+$redScale = 0.98
+$greenScale = 1.02
+$blueScale = 1.15
+$hazeFactor = 0.675
 $bloom = 0.85
 $gamma  = 1.02
 $exposure = 0.925
@@ -61,28 +61,28 @@ $bleach = 0.05
 
 [Preset]
 name = Neutral cold
-$redScale = 0.975
-$greenScale = 1.1
-$blueScale = 1.25
-$hazeFactor = 0.85
+$redScale = 0.98
+$greenScale = 1.06
+$blueScale = 1.28
+$hazeFactor = 0.875
 $bloom = 0.95
 $gamma  = 0.95
 $exposure = 0.97
-$vibrance  = 0.5
+$vibrance  = 0.65
 $crushContrast = 0.0
 $bleach = 0.39
 
 
 [Preset]
 name = Neutral cold clear
-$redScale = 0.975
-$greenScale = 1.1
-$blueScale = 1.25
-$hazeFactor = 0.3
-$bloom = 0.90
+$redScale = 0.95
+$greenScale = 1.06
+$blueScale = 1.28
+$hazeFactor = 0.675
+$bloom = 0.93
 $gamma  = 1.025
 $exposure = 0.92
-$vibrance  = 0.79
+$vibrance  = 0.85
 $crushContrast = 0.0
 $bleach = 0.1
 

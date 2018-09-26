@@ -33,11 +33,24 @@ $crushContrast = 0.0
 $bleach = 0.75
 
 [Preset]
+name = Neutral hazy
+$redScale = 0.95
+$greenScale = 1.02
+$blueScale = 1.15
+$hazeFactor = 0.95
+$bloom = 1.0
+$gamma  = 0.98
+$exposure = 0.95
+$vibrance  = 0.65
+$crushContrast = 0.0
+$bleach = 0.4
+
+[Preset]
 name = Neutral warm
 $redScale = 0.95
 $greenScale = 1.02
 $blueScale = 1.15
-$hazeFactor = 0.875
+$hazeFactor = 0.85
 $bloom = 0.85
 $gamma  = 0.95
 $exposure = 1.0
@@ -64,7 +77,7 @@ name = Neutral cold
 $redScale = 0.98
 $greenScale = 1.06
 $blueScale = 1.28
-$hazeFactor = 0.875
+$hazeFactor = 0.85
 $bloom = 0.95
 $gamma  = 0.95
 $exposure = 0.97
@@ -79,12 +92,12 @@ $redScale = 0.95
 $greenScale = 1.06
 $blueScale = 1.28
 $hazeFactor = 0.675
-$bloom = 0.93
+$bloom = 0.95
 $gamma  = 1.025
 $exposure = 0.92
 $vibrance  = 0.85
 $crushContrast = 0.0
-$bleach = 0.1
+$bleach = 0.25
 
 
 [Preset]

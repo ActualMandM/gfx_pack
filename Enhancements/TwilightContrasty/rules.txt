@@ -91,13 +91,13 @@ name = Neutral cold clear
 $redScale = 0.95
 $greenScale = 1.06
 $blueScale = 1.28
-$hazeFactor = 0.675
+$hazeFactor = 0.1
 $bloom = 0.95
 $gamma  = 1.025
 $exposure = 0.92
 $vibrance  = 0.85
 $crushContrast = 0.0
-$bleach = 0.25
+$bleach = 0.1
 
 
 [Preset]
@@ -112,16 +112,3 @@ $exposure = 0.9
 $vibrance  = 0.8
 $crushContrast = 0.0
 $bleach = 0.4
-
-[Preset]
-name = debug
-$redScale = 0.85
-$greenScale = 0.85
-$blueScale = 0.85
-$hazeFactor = 0.75
-$bloom = 0.5
-$gamma  = 0.5
-$exposure = 1.0
-$vibrance  = 0.8
-$crushContrast = 0.0
-$bleach = 0.1

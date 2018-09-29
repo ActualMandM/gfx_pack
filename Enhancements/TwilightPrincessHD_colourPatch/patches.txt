@@ -1,0 +1,9 @@
+[TPHDv81] 
+moduleMatches = 0x1A03E108
+#Move some look tweaks to patches instead of shaders
+
+#rodata constants
+0x100C3EB8  = .float 0.0026 ## (over) exposure    
+#0x100871C8  = .float 0.01  # cloud spd 
+
+#fog 425913

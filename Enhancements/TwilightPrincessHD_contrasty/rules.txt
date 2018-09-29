@@ -43,7 +43,7 @@ $gamma  = 0.98
 $exposure = 0.95
 $vibrance  = 0.65
 $crushContrast = 0.0
-$bleach = 0.4
+$bleach = 0.65
 
 [Preset]
 name = Neutral warm
@@ -56,7 +56,7 @@ $gamma  = 0.95
 $exposure = 1.0
 $vibrance  = 0.5
 $crushContrast = 0.0
-$bleach = 0.4
+$bleach = 0.65
 
 [Preset]
 name = Neutral warm clear n saturated
@@ -69,7 +69,7 @@ $gamma  = 1.02
 $exposure = 0.925
 $vibrance  = 0.75
 $crushContrast = 0.0
-$bleach = 0.05
+$bleach = 0.5
 
 [Preset]
 name = Neutral cold
@@ -82,7 +82,7 @@ $gamma  = 0.95
 $exposure = 0.97
 $vibrance  = 0.65
 $crushContrast = 0.0
-$bleach = 0.39
+$bleach = 0.69
 
 [Preset]
 name = Neutral cold clear
@@ -95,7 +95,7 @@ $gamma  = 1.025
 $exposure = 0.92
 $vibrance  = 0.85
 $crushContrast = 0.0
-$bleach = 0.1
+$bleach = 0.6
 
 [Preset]
 name = Intro white point

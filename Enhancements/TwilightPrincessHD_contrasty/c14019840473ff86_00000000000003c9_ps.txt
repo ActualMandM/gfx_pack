@@ -4,9 +4,6 @@
 // shader c14019840473ff86 //aa
 uniform vec2 uf_fragCoordScale;
 
-const float redScale = 0.92; 
-const float greenScale = 1.02; //2 
-const float blueScale = 1.22;//24
 const float hazeFactor = 0.1;
 
 const float gamma = $gamma; // 1.0 is neutral  Botw is already colour graded at this stage
@@ -19,9 +16,10 @@ const float contrastCurve = $contrastCurve;
 vec3 RGB_Lift = vec3($redShadows, $greenShadows , $blueSadows);		// [0.000 to 2.000] Adjust shadows for Red, Green and Blue.
 vec3 RGB_Gamma = vec3($redMid ,$greenMid, $blueMid);				// [0.000 to 2.000] Adjust midtones for Red, Green and Blue
 vec3 RGB_Gain = vec3($redHilight, $greenHilight, $blueHilight);		// [0.000 to 2.000] Adjust highlights for Red, Green and Blue
-
-const float sharp_strength = $sharp_strength;
-const float sharp_clamp = $sharp_clamp ;
+//lumasharpen
+const float sharp_mix = $sharp_mix;
+const float sharp_strength = 2.0; 
+const float sharp_clamp = 0.75;
 const float offset_bias = 1.0;
 float Sigmoid (float x) {
 
@@ -235,8 +233,8 @@ R0f.xyz = mix(R0f.xyz, smoothstep(0.0, 1.0, R0f.xyz), contrastCurve);
 //vec3 mix(vec3 x, vec3 y, float a)
 //R0f.xyz = mix(contrasty(R0f.xyz), vec3(Sigmoid(R0f.x), Sigmoid(R0f.y),Sigmoid(R0f.z)), 0.25);
 float smask = lumasharping(textureUnitPS0, passParameterSem0.xy);
-
-R0f.xyz += vec3(smask);
+vec3 temp3 = R0f.xyz;
+R0f.xyz = mix(R0f.xyz, (temp3.xyz += (smask)), sharp_mix);
 
 passPixelColor0 = vec4(R0f.x, R0f.y, R0f.z, R0f.w);
 }

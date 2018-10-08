@@ -25,19 +25,17 @@ $exposure = 1.0
 $vibrance  = 0.0
 $crushContrast = 0.0
 $bleach = 1.0
-
-$sharp_strength = 0.0
-$sharp_clamp = 0.75
+$sharp_mix = 0.0
 
 [Preset]
-name = sharp
+name = debug
 $redShadows = 1.0
 $greenShadows = 1.0
 $blueSadows = 1.0
-$redMid = 1.0
-$greenMid = 1.0
+$redMid = 0.5
+$greenMid = 0.5
 $blueMid = 1.0
-$redHilight = 1.0
+$redHilight = 0.5
 $greenHilight =1.0
 $blueHilight = 1.0
 
@@ -49,80 +47,70 @@ $exposure = 1.0
 $vibrance  = 0.0
 $crushContrast = 0.0
 $bleach = 1.0
-
-$sharp_strength = 3.0
-$sharp_clamp = 0.75
+$sharp_mix = 0.25
 
 [Preset]
-name = contrasty
-$redShadows = 1.0
-$greenShadows = 1.0
-$blueSadows = 1.0
-$redMid = 1.0
-$greenMid = 1.0
+name = Warm Contrasty
+$redShadows = 0.98
+$greenShadows = 0.98
+$blueSadows = 0.99
+$redMid = 0.98
+$greenMid = 0.98
 $blueMid = 1.0
 $redHilight = 1.0
 $greenHilight =1.0
 $blueHilight = 1.0
 
-$contrastCurve = 0.65
-$hazeFactor = 0.1
+$contrastCurve = 0.7
+$hazeFactor = 0.71
 $bloom = 0.85
 $gamma  = 1.1
-$exposure = 1.1
+$exposure = 1.07
 $vibrance  = 0.15
-$crushContrast = 0.0
+$crushContrast = 0.00
 $bleach = 0.75
-
-$sharp_strength = 3.0
-$sharp_clamp = 0.75
-
+$sharp_mix = 0.25
 
 [Preset]
-name = Neutral cold clear
-$redShadows = 0.97
+name = Cold
+$redShadows = 0.95
 $greenShadows = 0.96
-$blueSadows = 1.0
-$redMid = 0.94
-$greenMid = 0.94
-$blueMid = 1.0
-$redHilight = 0.94
-$greenHilight = 0.95
-$blueHilight = 1.0
+$blueSadows = 1.03
+$redMid = 0.95
+$greenMid = 0.96
+$blueMid = 1.03
+$redHilight = 0.98
+$greenHilight = 0.99
+$blueHilight = 1.03
 
-$contrastCurve = 0.05
+$contrastCurve = 0.2
 $hazeFactor = 0.1
 $bloom = 1.0
 $gamma  = 1.05
-$exposure = 1.03
+$exposure = 1.0
 $vibrance  = 0.45
 $crushContrast = 0.0
 $bleach = 0.75
-
-$sharp_strength = 3.0
-$sharp_clamp = 0.75
-
+$sharp_mix = 0.35
 
 [Preset]
-name = Neutral
-$redShadows = 0.96
+name = Neutral Contrasty
+$redShadows = 0.97
 $greenShadows = 0.97
-$blueSadows = 1.0
-$redMid = 0.96
-$greenMid = 0.97
-$blueMid = 1.0
-$redHilight = 0.98
-$greenHilight = 0.99
+$blueSadows = 0.99
+$redMid = 0.93
+$greenMid = 0.94
+$blueMid = 1.05
+$redHilight = 0.99
+$greenHilight =1.0
 $blueHilight = 1.0
 
-$contrastCurve = 0.25
-$hazeFactor = 0.1
-$bloom = 1.0
-$gamma  = 1.1
-$exposure = 1.0
-$vibrance  = 0.25
-$crushContrast = 0.0
+$contrastCurve = 0.7
+$hazeFactor = 0.71
+$bloom = 0.85
+$gamma  = 1.19
+$exposure = 1.09
+$vibrance  = 0.35
+$crushContrast = 0.00
 $bleach = 0.75
-
-$sharp_strength = 3.0
-$sharp_clamp = 0.75
+$sharp_mix = 0.25

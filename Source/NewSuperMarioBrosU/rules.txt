@@ -170,26 +170,18 @@ overwriteWidth = ($width/$gameWidth) * 512
 overwriteHeight = ($height/$gameHeight) * 256
 
 [TextureRedefine]
+width = 320
+height = 180
+#formatsExcluded = 
+overwriteWidth = ($width/$gameWidth) * 320
+overwriteHeight = ($height/$gameHeight) * 180
+
+[TextureRedefine]
 width = 256
 height = 128
 formats = 0x01a 
 overwriteWidth = ($width/$gameWidth) * 256
 overwriteHeight = ($height/$gameHeight) * 128
-
-[TextureRedefine]
-width = 320
-height = 180
-#formatsExcluded = 
-overwriteWidth = ($width/$gameWidth) * 320
-overwriteHeight = ($height/$gameHeight) * 180
-
-
-[TextureRedefine]
-width = 320
-height = 180
-#formatsExcluded = 
-overwriteWidth = ($width/$gameWidth) * 320
-overwriteHeight = ($height/$gameHeight) * 180
 
 [TextureRedefine]
 width = 160

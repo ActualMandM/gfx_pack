@@ -1,0 +1,116 @@
+[Definition]
+titleIds = 00050000101ED700,00050000101ED800,0005000010131D00
+name = AA removal TMS
+path = "Tokyo Mirage Sessions FE/Contrasty" 
+description = Colour and Contrasty
+version = 3
+
+[Preset]
+name = default
+$redShadows = 1.0
+$greenShadows = 1.0
+$blueSadows = 1.0
+$redMid = 1.0
+$greenMid = 1.0
+$blueMid = 1.0
+$redHilight = 1.0
+$greenHilight =1.0
+$blueHilight = 1.0
+
+$contrastCurve = 0.0
+$hazeFactor = 1.0
+$bloom = 1.0
+$gamma  = 1.0
+$exposure = 1.0
+$vibrance  = 0.0
+$crushContrast = 0.0
+$bleach = 1.0
+$sharp_mix = 0.0
+
+[Preset]
+name = debug
+$redShadows = 1.0
+$greenShadows = 1.0
+$blueSadows = 1.0
+$redMid = 0.5
+$greenMid = 0.5
+$blueMid = 1.0
+$redHilight = 0.5
+$greenHilight =1.0
+$blueHilight = 1.0
+
+$contrastCurve = 0.0
+$hazeFactor = 1.0
+$bloom = 1.0
+$gamma  = 1.0
+$exposure = 1.0
+$vibrance  = 0.0
+$crushContrast = 0.0
+$bleach = 1.0
+$sharp_mix = 0.25
+
+[Preset]
+name = Warm Contrasty
+$redShadows = 0.98
+$greenShadows = 0.98
+$blueSadows = 0.99
+$redMid = 0.98
+$greenMid = 0.98
+$blueMid = 1.0
+$redHilight = 1.0
+$greenHilight =1.0
+$blueHilight = 1.0
+
+$contrastCurve = 0.7
+$hazeFactor = 0.71
+$bloom = 0.85
+$gamma  = 1.1
+$exposure = 1.07
+$vibrance  = 0.15
+$crushContrast = 0.00
+$bleach = 0.85
+$sharp_mix = 0.25
+
+[Preset]
+name = Cold
+$redShadows = 0.95
+$greenShadows = 0.96
+$blueSadows = 1.03
+$redMid = 0.95
+$greenMid = 0.96
+$blueMid = 1.03
+$redHilight = 0.98
+$greenHilight = 0.99
+$blueHilight = 1.03
+
+$contrastCurve = 0.2
+$hazeFactor = 0.1
+$bloom = 1.0
+$gamma  = 1.05
+$exposure = 0.99
+$vibrance  = 0.45
+$crushContrast = 0.0
+$bleach = 0.85
+$sharp_mix = 0.35
+
+[Preset]
+name = Neutral Contrasty
+$redShadows = 0.97
+$greenShadows = 0.97
+$blueSadows = 0.99
+$redMid = 0.93
+$greenMid = 0.94
+$blueMid = 1.05
+$redHilight = 0.99
+$greenHilight =1.0
+$blueHilight = 1.0
+
+$contrastCurve = 0.7
+$hazeFactor = 0.71
+$bloom = 0.85
+$gamma  = 1.19
+$exposure = 1.09
+$vibrance  = 0.35
+$crushContrast = 0.00
+$bleach = 0.85
+$sharp_mix = 0.25

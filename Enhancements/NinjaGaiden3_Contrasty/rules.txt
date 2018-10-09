@@ -1,8 +1,8 @@
 [Definition]
-titleIds = 00050000101ED700,00050000101ED800,0005000010131D00
+titleIds = 0005000010110900,0005000010110A00,0005000010110B00
 name = Contrasty
-path = "Tokyo Mirage Sessions FE/Contrasty" 
-description = Colour and Contrasty
+path = "Ninja Gaiden 3: Razors Edge/Graphics/Contrasty" 
+description = Colour and contrast
 version = 3
 
 [Preset]

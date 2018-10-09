@@ -1,6 +1,6 @@
 [Definition]
 titleIds = 0005000010145D00,0005000010145C00,0005000010106100
-name = Resolution
+name = Contrasty
 path = "Super Mario 3D World/Contrasty" 
 description = Colour and contrast - Note doesn't work with resolution in 1.4
 version = 3
@@ -51,21 +51,21 @@ $sharp_mix = 0.25
 
 [Preset]
 name = Warm Contrasty
-$redShadows = 0.98
+$redShadows = 0.99
 $greenShadows = 0.98
-$blueSadows = 0.99
-$redMid = 0.98
-$greenMid = 0.98
-$blueMid = 1.0
+$blueSadows = 0.98
+$redMid = 0.99
+$greenMid = 0.97
+$blueMid = 0.98
 $redHilight = 1.0
-$greenHilight =1.0
+$greenHilight = 1.0
 $blueHilight = 1.0
 
-$contrastCurve = 0.7
+$contrastCurve = 0.5
 $hazeFactor = 0.71
 $bloom = 0.85
 $gamma  = 1.1
-$exposure = 1.07
+$exposure = 1.03
 $vibrance  = 0.15
 $crushContrast = 0.00
 $bleach = 0.85
@@ -73,44 +73,44 @@ $sharp_mix = 0.25
 
 [Preset]
 name = Cold
-$redShadows = 0.95
-$greenShadows = 0.96
+$redShadows = 0.97
+$greenShadows = 0.97
 $blueSadows = 1.03
-$redMid = 0.95
-$greenMid = 0.96
+$redMid = 0.97
+$greenMid = 0.97
 $blueMid = 1.03
-$redHilight = 0.98
+$redHilight = 0.99
 $greenHilight = 0.99
-$blueHilight = 1.03
+$blueHilight = 1.0
 
 $contrastCurve = 0.2
 $hazeFactor = 0.1
 $bloom = 1.0
 $gamma  = 1.05
 $exposure = 0.99
-$vibrance  = 0.45
+$vibrance  = 0.25
 $crushContrast = 0.0
 $bleach = 0.85
 $sharp_mix = 0.35
 
 [Preset]
 name = Neutral Contrasty
-$redShadows = 0.97
-$greenShadows = 0.97
+$redShadows = 0.99
+$greenShadows = 0.99
 $blueSadows = 0.99
-$redMid = 0.93
-$greenMid = 0.94
-$blueMid = 1.05
+$redMid = 1.0
+$greenMid = 1.0
+$blueMid = 1.0
 $redHilight = 0.99
-$greenHilight =1.0
-$blueHilight = 1.0
+$greenHilight =0.99
+$blueHilight = 0.99
 
-$contrastCurve = 0.7
+$contrastCurve = 0.35
 $hazeFactor = 0.71
 $bloom = 0.85
-$gamma  = 1.19
-$exposure = 1.09
-$vibrance  = 0.35
+$gamma  = 1.05
+$exposure = 1.01
+$vibrance  = 0.15
 $crushContrast = 0.00
 $bleach = 0.85
-$sharp_mix = 0.25
+$sharp_mix = 0.35

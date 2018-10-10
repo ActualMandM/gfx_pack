@@ -140,14 +140,14 @@ overwriteHeight = ($height/$gameHeight) * 720
 width = 640
 height = 368
 tileModesExcluded = 0x001
-formats = 0x019,0x816,0x806,0x80e
+#formats = 0x019,0x816,0x806,0x80e
 overwriteWidth = ($width/$gameWidth) * 640
 overwriteHeight = ($height/$gameHeight) * 368
 
 [TextureRedefine]
 width = 640
 height = 360
-formats = 0x816
+#formats = 0x816
 tileModesExcluded = 0x001
 overwriteWidth = ($width/$gameWidth) * 640
 overwriteHeight = ($height/$gameHeight) * 360

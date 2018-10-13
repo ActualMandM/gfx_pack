@@ -191,7 +191,7 @@ height = 32
 overwriteWidth = ($width/$gameWidth) * 48
 overwriteHeight  = ($height/$gameHeight) * 32
 
-#[TextureRedefine] #May unintentionally scale textures
+#[TextureRedefine] #
 #width = 32
 #height = 32
 #formatsExcluded =  0x031,0x002,0x001,0x01a
@@ -205,9 +205,9 @@ height = 16
 overwriteWidth = ($width/$gameWidth) * 32
 overwriteHeight  = ($height/$gameHeight) * 16
 
-#[TextureRedefine] #May unintentionally scale textures
-#width = 8
-#height = 8
-#formatsExcluded = 
-#overwriteWidth = ($width/$gameWidth) * 8
-#overwriteHeight = ($height/$gameHeight) * 8
+[TextureRedefine] #
+width = 8
+height = 8
+formatsExcluded = 
+overwriteWidth = ($width/$gameWidth) * 8
+overwriteHeight = ($height/$gameHeight) * 8

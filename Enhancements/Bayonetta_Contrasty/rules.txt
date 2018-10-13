@@ -65,11 +65,11 @@ $contrastCurve = 0.7
 $hazeFactor = 0.25
 $bloom = 0.85
 $gamma  = 1.1
-$exposure = 1.07
+$exposure = 1.03
 $vibrance  = 0.35
 $crushContrast = 0.00
 $bleach = 0.85
-$sharp_mix = 0.25
+$sharp_mix = 0.45
 
 [Preset]
 name = Colourfull

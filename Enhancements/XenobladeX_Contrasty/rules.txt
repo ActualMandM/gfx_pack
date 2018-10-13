@@ -5,6 +5,7 @@ path = "Xenoblade Chronicles X/Contrasty"
 description = Colour and contrast - Replaces AA removal
 version = 3
 
+
 [Preset]
 name = default
 $redShadows = 1.0
@@ -50,54 +51,54 @@ $bleach = 1.0
 $sharp_mix = 0.25
 
 [Preset]
-name = Warm Contrasty
-$redShadows = 0.99
-$greenShadows = 0.98
-$blueSadows = 0.98
-$redMid = 0.99
-$greenMid = 0.97
-$blueMid = 0.98
+name = High Contrasty
+$redShadows = 1.0
+$greenShadows = 1.0
+$blueSadows = 1.0
+$redMid = 0.98
+$greenMid = 0.98
+$blueMid = 0.9
 $redHilight = 1.0
-$greenHilight = 1.0
+$greenHilight =1.0
 $blueHilight = 1.0
 
-$contrastCurve = 0.5
-$hazeFactor = 0.71
+$contrastCurve = 0.6
+$hazeFactor = 0.25
 $bloom = 0.85
 $gamma  = 1.1
-$exposure = 1.03
-$vibrance  = 0.15
+$exposure = 1.05
+$vibrance  = 0.25
 $crushContrast = 0.00
 $bleach = 0.85
-$sharp_mix = 0.25
+$sharp_mix = 0.45
 
 [Preset]
-name = Cold
-$redShadows = 0.97
-$greenShadows = 0.97
-$blueSadows = 1.03
-$redMid = 0.97
-$greenMid = 0.97
-$blueMid = 1.03
-$redHilight = 0.99
-$greenHilight = 0.99
-$blueHilight = 1.0
+name = Colourfull
+$redShadows = 0.999
+$greenShadows = 0.98
+$blueSadows = 0.98
+$redMid = 1.0
+$greenMid = 0.99
+$blueMid = 0.99
+$redHilight = 1.0
+$greenHilight =0.99
+$blueHilight = 0.99
 
-$contrastCurve = 0.2
-$hazeFactor = 0.1
-$bloom = 1.0
+$contrastCurve = 0.15
+$hazeFactor = 1.0
+$bloom = 0.85
 $gamma  = 1.05
-$exposure = 0.99
-$vibrance  = 0.25
-$crushContrast = 0.0
+$exposure = 1.01
+$vibrance  = 0.4
+$crushContrast = 0.00
 $bleach = 0.85
 $sharp_mix = 0.35
 
 [Preset]
 name = Neutral Contrasty
-$redShadows = 0.99
-$greenShadows = 0.99
-$blueSadows = 0.99
+$redShadows = 1.01
+$greenShadows = 1.01
+$blueSadows = 1.01
 $redMid = 1.0
 $greenMid = 1.0
 $blueMid = 1.0
@@ -105,10 +106,10 @@ $redHilight = 0.99
 $greenHilight =0.99
 $blueHilight = 0.99
 
-$contrastCurve = 0.35
-$hazeFactor = 0.71
+$contrastCurve = 0.30
+$hazeFactor = 1.0
 $bloom = 0.85
-$gamma  = 1.05
+$gamma  = 1.075
 $exposure = 1.01
 $vibrance  = 0.15
 $crushContrast = 0.00

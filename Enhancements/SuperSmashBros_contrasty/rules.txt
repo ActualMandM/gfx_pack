@@ -1,8 +1,8 @@
 [Definition]
-titleIds = 000500001010ec00,000500001010ed00,000500001010eb00
+titleIds = 0005000010110E00,0005000010145000,0005000010144F00
 name = Contrasty
-path = "Mario Kart 8/Contrasty" 
-description = Colour and contrast
+path = "Super Smash Bros. for Wii U/Graphics/Contrasty"
+description = Colours and contrast
 version = 3
 
 [Preset]

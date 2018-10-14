@@ -1,8 +1,8 @@
 [Definition]
 titleIds = 0005000010172600,0005000010172700,000500001011B900
 name = Resolution
-path = "Bayonetta 2/Graphics/Resolution"
-description = Changes the resolution of the game.
+path = "Bayonetta 2/Graphics/Resolution_x2"
+description = Changes the resolution of the game. Runs internal scaling at x 2 resolution.
 version = 3
 
 [Preset]

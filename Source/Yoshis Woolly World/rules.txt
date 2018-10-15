@@ -11,6 +11,7 @@ $width = 1280
 $height = 720
 $gameWidth = 1280
 $gameHeight = 720
+$dither = 0.1
 
 [Preset]
 name = 640x360
@@ -18,6 +19,7 @@ $width = 640
 $height = 360
 $gameWidth = 1280
 $gameHeight = 720
+$dither = 0.1
 
 [Preset]
 name = 854x480
@@ -25,6 +27,7 @@ $width = 854
 $height = 480
 $gameWidth = 1280
 $gameHeight = 720
+$dither = 0.1
 
 [Preset]
 name = 960x540
@@ -32,6 +35,7 @@ $width = 960
 $height = 540
 $gameWidth = 1280
 $gameHeight = 720
+$dither = 0.1
 
 [Preset]
 name = 1600x900
@@ -39,6 +43,7 @@ $width = 1600
 $height = 900
 $gameWidth = 1280
 $gameHeight = 720
+$dither = 0.1
 
 [Preset]
 name = 1920x1080
@@ -46,6 +51,7 @@ $width = 1920
 $height = 1080
 $gameWidth = 1280
 $gameHeight = 720
+$dither = 0.1
 
 [Preset]
 name = 2560x1440
@@ -53,6 +59,7 @@ $width = 2560
 $height = 1440
 $gameWidth = 1280
 $gameHeight = 720
+$dither = 0.5
 
 [Preset]
 name = 2732x1536
@@ -60,6 +67,7 @@ $width = 2732
 $height = 1536
 $gameWidth = 1280
 $gameHeight = 720
+$dither = 0.5
 
 [Preset]
 name = 3200x1800
@@ -67,6 +75,7 @@ $width = 3200
 $height = 1800
 $gameWidth = 1280
 $gameHeight = 720
+$dither = 0.75
 
 [Preset]
 name = 3840x2160
@@ -74,6 +83,7 @@ $width = 3840
 $height = 2160
 $gameWidth = 1280
 $gameHeight = 720
+$dither = 0.85
 
 [Preset]
 name = 5120x2880
@@ -81,6 +91,7 @@ $width = 5120
 $height = 2880
 $gameWidth = 1280
 $gameHeight = 720
+$dither = 1.0
 
 [Preset]
 name = 7680x4320
@@ -88,6 +99,7 @@ $width = 7680
 $height = 4320
 $gameWidth = 1280
 $gameHeight = 720
+$dither = 1.25
 
 [Preset]
 name = 10240x5760
@@ -95,6 +107,7 @@ $width = 10240
 $height = 5760
 $gameWidth = 1280
 $gameHeight = 720
+$dither = 1.25
 
 [TextureRedefine]
 width = 1280

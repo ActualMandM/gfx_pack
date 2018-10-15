@@ -3,12 +3,24 @@
 #extension GL_ARB_separate_shader_objects : enable
 // shader b5082db8c1a44514
 //BGblur vert
-const float resScale = ($width/$gameWidth);
+const float dither = $dither ;
 uniform ivec4 uf_uniformRegisterPS[256];
 layout(binding = 0) uniform sampler2D textureUnitPS0;// Tex0 addr 0xf4e14800 res 640x360x1 dim 1 tm: 4 format 001a compSel: 0 1 2 3 mipView: 0x0 (num 0x1) sliceView: 0x0 (num 0x1) Sampler0 ClampX/Y/Z: 2 2 2 border: 0
 layout(location = 0) in vec4 passParameterSem0;
 layout(location = 0) out vec4 passPixelColor0;
 uniform vec2 uf_fragCoordScale;
+
+highp float lineRand(vec2 co)
+{
+	highp float a = 12.9898;
+	highp float b = 78.233;
+	highp float c = 43758.5453;
+	highp float dt = dot(co.xy, vec2(a, b));
+	highp float sn = mod(dt, 3.14);
+	return fract(sin(sn) * c);
+}
+
+
 int clampFI32(int v)
 {
 	if( v == 0x7FFFFFFF )
@@ -43,6 +55,7 @@ void main()
 	vec3 cubeMapSTM;
 	int cubeMapFaceId;
 	R0i = floatBitsToInt(passParameterSem0);
+	R0i.xy = floatBitsToInt(passParameterSem0.xy- (lineRand(gl_FragCoord.xy)*0.001*dither)).xy;
 	if( activeMaskStackC[1] == true ) {
 		R1i.xyzw = floatBitsToInt(texture(textureUnitPS0, intBitsToFloat(R0i.xy)).xyzw);
 	}
@@ -80,8 +93,8 @@ void main()
 			ARi.x = int(tempResultf);
 			PV1i.x = floatBitsToInt(tempResultf);
 			// 2
-			R1i.xyz = floatBitsToInt(vec3(intBitsToFloat(R0i.x),intBitsToFloat(R0i.y),intBitsToFloat(R0i.x)) + vec3(intBitsToFloat(uf_uniformRegisterPS[ARi.x+0].x)/resScale,intBitsToFloat(uf_uniformRegisterPS[ARi.x+0].y)/resScale,-(intBitsToFloat(uf_uniformRegisterPS[ARi.x+0].x)/resScale)));
-			R1i.w = floatBitsToInt(intBitsToFloat(R0i.y) + -(intBitsToFloat(uf_uniformRegisterPS[ARi.x+0].y)/resScale));
+			R1i.xyz = floatBitsToInt(vec3(intBitsToFloat(R0i.x),intBitsToFloat(R0i.y),intBitsToFloat(R0i.x)) + vec3(intBitsToFloat(uf_uniformRegisterPS[ARi.x+0].x),intBitsToFloat(uf_uniformRegisterPS[ARi.x+0].y),-(intBitsToFloat(uf_uniformRegisterPS[ARi.x+0].x))));
+			R1i.w = floatBitsToInt(intBitsToFloat(R0i.y) + -(intBitsToFloat(uf_uniformRegisterPS[ARi.x+0].y)));
 		}
 		if( activeMaskStackC[1] == true ) {
 			R2i.xyzw = floatBitsToInt(texture(textureUnitPS0, intBitsToFloat(R1i.xy)).xyzw);

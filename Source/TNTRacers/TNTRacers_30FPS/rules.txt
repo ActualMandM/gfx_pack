@@ -1,0 +1,10 @@
+[Definition]
+titleIds = 0005000010142800,000500001014F000
+name = "TNT Racers Nitro Machines Edition - 30FPS Lock"
+# Without it the game goes at twice the actual speed.
+version = 2
+
+[Control]
+vsyncFrequency = 30
+
+

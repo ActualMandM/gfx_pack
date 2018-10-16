@@ -1,0 +1,22 @@
+[Definition]
+titleIds = 0005000010142800,000500001014F000
+name = "TNT Racers Nitro Machines Edition - 5120x2880"
+version = 2
+
+[TextureRedefine] # tv
+width = 1928
+height = 1080
+overwriteWidth = 5141 
+overwriteHeight = 2901 
+
+[TextureRedefine] # q-res
+width = 480
+height = 270
+overwriteWidth = 1280 
+overwriteHeight = 720 
+
+[TextureRedefine] # gamepad
+width = 854
+height = 480
+#overwriteWidth = 5120 
+#overwriteHeight = 2880 

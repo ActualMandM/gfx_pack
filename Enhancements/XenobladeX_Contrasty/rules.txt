@@ -70,29 +70,29 @@ $exposure = 1.01
 $vibrance  = 0.15
 $crushContrast = 0.00
 $bleach = 0.85
-$sharp_mix = 0.25
+$sharp_mix = 0.2
 
 [Preset]
 name = Colourfull
-$redShadows = 0.999
-$greenShadows = 0.98
-$blueSadows = 0.98
-$redMid = 1.0
-$greenMid = 0.99
+$redShadows = 1.0
+$greenShadows = 1.0
+$blueSadows = 1.0
+$redMid = 0.99
+$greenMid = 0.98
 $blueMid = 0.99
 $redHilight = 1.0
 $greenHilight =0.99
-$blueHilight = 0.99
+$blueHilight = 1.0
 
-$contrastCurve = 0.15
-$hazeFactor = 1.0
+$contrastCurve = 0.333
+$hazeFactor = 0.25
 $bloom = 0.85
-$gamma  = 1.05
+$gamma  = 1.1
 $exposure = 1.01
-$vibrance  = 0.4
+$vibrance  = 0.35
 $crushContrast = 0.00
 $bleach = 0.85
-$sharp_mix = 0.35
+$sharp_mix = 0.2
 
 [Preset]
 name = Neutral Contrasty
@@ -106,7 +106,7 @@ $redHilight = 0.99
 $greenHilight =0.99
 $blueHilight = 0.99
 
-$contrastCurve = 0.20
+$contrastCurve = 0.25
 $hazeFactor = 1.0
 $bloom = 0.85
 $gamma  = 1.05

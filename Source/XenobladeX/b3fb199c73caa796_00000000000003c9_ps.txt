@@ -4,7 +4,11 @@
 // shader b3fb199c73caa796
 //BB title
 
-const float resScale = 3.0;
+const float dither = $dither ;
+const float scaleShader = $scaleShader;
+const float scaleBlur = $scaleBlur;
+
+
 const int sampleScale = 8;
 const float lightBloom = 0.95; 
 highp float lineRand(vec2 co)
@@ -17,14 +21,12 @@ highp float lineRand(vec2 co)
 	return fract(sin(sn) * c);
 }
 
-
 uniform ivec4 uf_remappedPS[4];
 layout(binding = 0) uniform sampler2D textureUnitPS0;// Tex0 addr 0xf551a000 res 1280x720x1 dim 1 tm: 4 format 001a compSel: 0 1 2 3 mipView: 0x0 (num 0x1) sliceView: 0x0 (num 0x1) Sampler0 ClampX/Y/Z: 2 2 2 border: 0
 layout(binding = 1) uniform sampler2D textureUnitPS1;// Tex1 addr 0xf470a000 res 1280x720x1 dim 1 tm: 4 format 0816 compSel: 0 1 2 5 mipView: 0x0 (num 0x1) sliceView: 0x0 (num 0x1) Sampler1 ClampX/Y/Z: 2 2 2 border: 0
 layout(location = 0) in vec4 passParameterSem0;
 layout(location = 0) out vec4 passPixelColor0;
 uniform vec2 uf_fragCoordScale;
-
 
 // FabriceNeyret2 CC, single shader gaussian by intermediate MIPmap level. www.shadertoy.com/view/ltScRG
 const int samples = 8 * sampleScale, //8 or 4 balances xy position
@@ -84,6 +86,8 @@ bool predResult = true;
 vec3 cubeMapSTM;
 int cubeMapFaceId;
 R0f = passParameterSem0;
+R0f.xy = R0f.xy - (lineRand(gl_FragCoord.xy)*0.0012 *dither);
+R0f.xy = R0f.xy + (lineRand(gl_FragCoord.xy*vec2(0.1, 0.09))*0.0011 *dither);
 // 0
 R1f.x = R0f.x + intBitsToFloat(uf_remappedPS[0].x);
 R1f.y = R0f.y + intBitsToFloat(uf_remappedPS[0].y);
@@ -109,7 +113,7 @@ R3f.xyzw = (texture(textureUnitPS1, R0f.zw).xyzw);
 R4f.xyzw = (texture(textureUnitPS1, R0f.xy).xyzw);
 R5f.xyzw = (texture(textureUnitPS1, R1f.zw).xyzw);
 
-R6f.xyz =	blur(textureUnitPS0, R1f.xy, ps*1.0).xyz; //1.0 4k //.66 2k //0.075 1k
+R6f.xyz =	blur(textureUnitPS0, R1f.xy, ps*scaleBlur).xyz; //1.0 4k //.66 2k //0.075 1k
 R7f.xyz = R6f.xyz;
 R0f.xyz = R6f.xyz;
 R1f.xyz = R6f.xyz;

@@ -3,8 +3,11 @@
 #extension GL_ARB_separate_shader_objects : enable
 // shader d8e69e8df8c227f5
 //BB grid n char select
+const float dither = $dither ;
+const float scaleShader = $scaleShader;
+const float scaleBlur = $scaleBlur;
 
-const float resScale = 3.0;
+
 const int sampleScale = 8;
 const float lightBloom = 0.95; 
 highp float lineRand(vec2 co)
@@ -81,6 +84,8 @@ bool predResult = true;
 vec3 cubeMapSTM;
 int cubeMapFaceId;
 R0f = passParameterSem0;
+R0f.xy = R0f.xy - (lineRand(gl_FragCoord.xy)*0.0012 *dither);
+R0f.xy = R0f.xy + (lineRand(gl_FragCoord.xy*vec2(0.1, 0.09))*0.0011 *dither);
 // 0
 R1f.x = R0f.x + intBitsToFloat(uf_remappedPS[0].x);
 R1f.y = R0f.y + intBitsToFloat(uf_remappedPS[0].y);
@@ -106,7 +111,7 @@ R3f.xyz = (texture(textureUnitPS1, R0f.zw).xyz);
 R4f.xyz = (texture(textureUnitPS1, R0f.xy).xyz);
 R5f.xyz = (texture(textureUnitPS1, R1f.zw).xyz);
 
-R6f.xyz =	blur(textureUnitPS0, R1f.xy, ps*0.51).xyz; //1.0 4k //.66 2k //0.075 1k //.51 4kx2
+R6f.xyz =	blur(textureUnitPS0, R1f.xy, ps*scaleBlur).xyz; //1.0 4k //.66 2k //0.075 1k //.51 4kx2
 R7f.xyz = R6f.xyz;
 R0f.xyz = R6f.xyz;
 R1f.xyz = R6f.xyz;

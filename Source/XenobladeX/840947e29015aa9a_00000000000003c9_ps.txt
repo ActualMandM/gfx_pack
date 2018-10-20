@@ -4,9 +4,12 @@
 // shader 840947e29015aa9a
 //BB cliff
 
-const float resScale = 3.0;
+const float dither = $dither ;
+const float scaleShader = $scaleShader;
+const float scaleBlur = $scaleBlur;
+
 const int sampleScale = 8;
-const float lightBloom = 0.95; 
+
 highp float lineRand(vec2 co)
 {
 	highp float a = 12.9898;
@@ -82,6 +85,8 @@ vec3 cubeMapSTM;
 int cubeMapFaceId;
 R0f = passParameterSem0;
 R1f = passParameterSem1;
+R0f.xy = R0f.xy - (lineRand(gl_FragCoord.xy)*0.0012 *dither);
+R0f.xy = R0f.xy + (lineRand(gl_FragCoord.xy*vec2(0.1, 0.09))*0.0011 *dither);
 // 0
 R2f.x = R1f.x + intBitsToFloat(uf_remappedPS[0].x);
 R2f.y = R1f.y + intBitsToFloat(uf_remappedPS[0].y);
@@ -95,7 +100,7 @@ backupReg1f = R1f.y;
 R1f.xyz = vec3(backupReg0f,backupReg1f,backupReg0f) + vec3(intBitsToFloat(uf_remappedPS[1].x),intBitsToFloat(uf_remappedPS[1].y),intBitsToFloat(uf_remappedPS[1].z));
 R1f.w = backupReg1f + intBitsToFloat(uf_remappedPS[1].w);
 
-vec2 coord = passParameterSem0.xy*textureSize(textureUnitPS0, 0); // R0f.xy;// vec2(0.5, 0.5);
+vec2 coord = passParameterSem0.xy*textureSize(textureUnitPS0, 0); 
 vec2 ps = vec2(1.0) / textureSize(textureUnitPS0, 0);
 vec2 uv = coord * ps;
 
@@ -104,7 +109,7 @@ R3f.xyz = (texture(textureUnitPS1, R2f.xy).xyz);
 R4f.xyz = (texture(textureUnitPS1, R0f.zw).xyz);
 R5f.xyz = (texture(textureUnitPS1, R1f.xy).xyz);
 R6f.xyz = (texture(textureUnitPS1, R1f.zw).xyz);
-R2f.xyz =	blur(textureUnitPS0, R2f.xy, ps*0.5).xyz;
+R2f.xyz =	blur(textureUnitPS0, R2f.xy, ps*scaleBlur).xyz;
 R7f.xyz = R2f.xyz; 
 R8f.xyz = R2f.xyz; 
 R1f.xyz = R2f.xyz;

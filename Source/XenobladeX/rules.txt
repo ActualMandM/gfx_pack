@@ -80,9 +80,9 @@ $height = 2160
 $gameWidth = 1280
 $gameHeight = 720
 $internalRes = 1
-$dither = 0.25
+$dither = 0.2
 $scaleShader = 1.0
-$scaleBlur = 0.75
+$scaleBlur = 0.6666
 
 [Preset]
 name = 3840x2160 (4k - Native x3) x2 sub scaling
@@ -143,8 +143,8 @@ height = 1024
 formats = 0x005 
 #overwriteWidth = ($height/$gameHeight) * 1024
 #overwriteHeight = ($height/$gameHeight) * 1024
-overwriteWidth = 2048 #1080 breaks without rounding
-overwriteHeight = 2048
+overwriteWidth = 3072 #1080 breaks without rounding
+overwriteHeight = 3072
 
 
 [TextureRedefine] #ingame menu
@@ -189,8 +189,8 @@ height = 512
 formats = 0x005
 #overwriteWidth = ($height/$gameHeight) * 512
 #overwriteHeight = ($height/$gameHeight) * 512
-overwriteWidth = 2048 #1080 breaks without rounding
-overwriteHeight = 2048
+overwriteWidth = 3072 #1080 breaks without rounding
+overwriteHeight = 3072
 
 [TextureRedefine]
 width = 512

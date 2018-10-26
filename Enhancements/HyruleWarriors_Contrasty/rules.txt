@@ -29,25 +29,25 @@ $sharp_mix = 0.0
 
 [Preset]
 name = High Contrasty
-$redShadows = 1.0
-$greenShadows = 1.0
-$blueSadows = 1.0
+$redShadows = 1.02
+$greenShadows = 1.01
+$blueSadows = 1.01
 $redMid = 0.98
 $greenMid = 0.98
-$blueMid = 0.98
+$blueMid = 0.96
 $redHilight = 1.02
-$greenHilight =1.02
-$blueHilight = 1.2
+$greenHilight = 1.01
+$blueHilight = 1.0
 
-$contrastCurve = 0.4
+$contrastCurve = 0.45
 $hazeFactor = 0.25
 $bloom = 0.85
-$gamma  = 1.1
-$exposure = 1.15
-$vibrance  = 0.35
+$gamma = 1.0
+$exposure = 1.5
+$vibrance = 0.35
 $crushContrast = 0.00
 $bleach = 0.85
-$sharp_mix = 0.4
+$sharp_mix = 0.35
 
 [Preset]
 name = Colourfull
@@ -64,9 +64,9 @@ $blueHilight = 0.99
 $contrastCurve = 0.1
 $hazeFactor = 1.0
 $bloom = 0.85
-$gamma  = 1.05
+$gamma = 1.05
 $exposure = 1.1
-$vibrance  = 0.5
+$vibrance = 0.5
 $crushContrast = 0.00
 $bleach = 0.85
 $sharp_mix = 0.3
@@ -83,12 +83,12 @@ $redHilight = 0.99
 $greenHilight =0.99
 $blueHilight = 0.99
 
-$contrastCurve = 0.5
+$contrastCurve = 0.25
 $hazeFactor = 1.0
 $bloom = 0.85
-$gamma  = 1.15
+$gamma = 1.075
 $exposure = 1.25
-$vibrance  = 0.15
+$vibrance = 0.15
 $crushContrast = 0.00
 $bleach = 0.85
 $sharp_mix = 0.25

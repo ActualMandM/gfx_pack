@@ -96,18 +96,15 @@ R1i = floatBitsToInt(passParameterSem129);
 vec2 coord = passParameterSem128.xy*textureSize(textureUnitPS0, 0); //
 vec2 ps = vec2(1.0) / textureSize(textureUnitPS0, 0);
 vec2 uv = coord * ps;
-R5i.xyz = floatBitsToInt(blur(textureUnitPS0, passParameterSem128.xy, ps*scaleBlur)).xyz; //1.0 4k //.66 2k //0.075 1k //.51 4kx2
+R5i.xyz = floatBitsToInt(blur(textureUnitPS0, passParameterSem129.xy, ps*scaleBlur)).xyz; //1.0 4k //.66 2k //0.075 1k //.51 4kx2
 
 //R5i.xyz = floatBitsToInt(texture(textureUnitPS0, intBitsToFloat(R0i.xy)).xyz);
 R2i.x = floatBitsToInt(texture(textureUnitPS2, intBitsToFloat(R0i.xy)).x);
-R6i.xyz = floatBitsToInt(blur(textureUnitPS0, passParameterSem128.zw, ps*scaleBlur)).xyz;
-//R6i.xyz = floatBitsToInt(texture(textureUnitPS0, intBitsToFloat(R0i.zw)).xyz);
+R6i.xyz = floatBitsToInt(texture(textureUnitPS0, intBitsToFloat(R0i.zw)).xyz);
 R0i.x = floatBitsToInt(texture(textureUnitPS2, intBitsToFloat(R0i.zw)).x);
-R7i.xyz = floatBitsToInt(blur(textureUnitPS0, passParameterSem129.xy, ps*scaleBlur)).xyz;
-//R7i.xyz = floatBitsToInt(texture(textureUnitPS0, intBitsToFloat(R1i.xy)).xyz);
+R7i.xyz = floatBitsToInt(texture(textureUnitPS0, intBitsToFloat(R1i.xy)).xyz);
 R3i.x = floatBitsToInt(texture(textureUnitPS2, intBitsToFloat(R1i.xy)).x);
-R8i.xyz = floatBitsToInt(blur(textureUnitPS0, passParameterSem129.zw, ps*scaleBlur)).xyz;
-//R8i.xyz = floatBitsToInt(texture(textureUnitPS0, intBitsToFloat(R1i.zw)).xyz);
+R8i.xyz = floatBitsToInt(texture(textureUnitPS0, intBitsToFloat(R1i.zw)).xyz);
 R1i.x = floatBitsToInt(texture(textureUnitPS2, intBitsToFloat(R1i.zw)).x);
 // 0
 R4i.x = 0x3727c5ac;

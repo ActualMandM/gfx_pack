@@ -115,7 +115,7 @@ $gameHeight = 720
 $internalRes = 1
 $dither = 0.2
 $scaleShader = 1.0
-$scaleBlur = 0.15
+$scaleBlur = 0.5
 
 [Preset]
 name = 3840x2160 (4k - Native x3) x2 sub scaling
@@ -126,7 +126,7 @@ $gameHeight = 720
 $internalRes = 1.5
 $dither = 0.25
 $scaleShader = 1.0
-$scaleBlur = 0.15
+$scaleBlur = 0.5
 
 [Preset]
 name = 5120x2880
@@ -214,12 +214,13 @@ height = 360
 overwriteWidth = ($width/$gameWidth) * (640*$internalRes)
 overwriteHeight = ($height/$gameHeight) * (360*$internalRes)
 
-#[TextureRedefine] 
-#width = 512
-#height = 512
+[TextureRedefine] 
+width = 512
+height = 512
+formats = 0x005
 #formatsExcluded = 0x433,0x431,0x035,0x033,0x031,0x005
-#overwriteWidth = ($width/$gameWidth) * 512
-#overwriteHeight = ($height/$gameHeight) * 512
+overwriteWidth = ($width/$gameWidth) * 512
+overwriteHeight = ($height/$gameHeight) * 512
 
 [TextureRedefine]
 width = 352

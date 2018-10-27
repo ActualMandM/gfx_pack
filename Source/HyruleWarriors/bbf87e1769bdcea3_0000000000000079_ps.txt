@@ -5,7 +5,7 @@
 
 const float dither = $dither ;
 const float scaleShader = $scaleShader;
-const float scaleBlur = $scaleBlur;
+const float scaleBlur = ($scaleBlur*$internalRes);
 
 const int sampleScale = 8;
 const float lightBloom = 0.95; 

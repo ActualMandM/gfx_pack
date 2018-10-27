@@ -64,6 +64,17 @@ $scaleShader = 1.0
 $scaleBlur = 0.25
 
 [Preset]
+name = 1920x1080 (HD) x1.5 sub scaling
+$width = 1920
+$height = 1080
+$gameWidth = 1280
+$gameHeight = 720
+$internalRes = 1.5
+$dither = 0.15
+$scaleShader = 1.0
+$scaleBlur = 0.25
+
+[Preset]
 name = 1600x900
 $width = 1600
 $height = 900
@@ -86,12 +97,12 @@ $scaleShader = 1.0
 $scaleBlur = 0.5
 
 [Preset]
-name = 2560x1440 (Native x2) x2 sub scaling
+name = 2560x1440 (Native x2) x1.5 sub scaling
 $width = 2560
 $height = 1440
 $gameWidth = 1280
 $gameHeight = 720
-$internalRes = 2
+$internalRes = 1.5
 $dither = 0.15
 $scaleShader = 71.0
 $scaleBlur = 0.5
@@ -119,7 +130,7 @@ $scaleShader = 1.0
 $scaleBlur = 0.75
 
 [Preset]
-name = 3840x2160 (4k - Native x3) x2 sub scaling
+name = 3840x2160 (4k - Native x3) x1.5 sub scaling
 $width = 3840
 $height = 2160
 $gameWidth = 1280
@@ -127,7 +138,7 @@ $gameHeight = 720
 $internalRes = 1.5
 $dither = 0.25
 $scaleShader = 1.0
-$scaleBlur = 1.0
+$scaleBlur = 0.75
 
 [Preset]
 name = 5120x2880

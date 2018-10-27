@@ -4,6 +4,7 @@ name = Resolution
 path = "Hyrule warriors/Graphics/Resolution"
 description = Changes the resolution of the game.
 version = 3
+vsyncFrequency = 30
 
 [Preset]
 name = 1280x720 (Default)
@@ -47,7 +48,7 @@ $gameHeight = 720
 $internalRes = 1
 $dither = 0.01
 $scaleShader = 1.0
-$scaleBlur = 0.01
+$scaleBlur = 0.001
 
 // Quality
 
@@ -60,7 +61,7 @@ $gameHeight = 720
 $internalRes = 1
 $dither = 0.15
 $scaleShader = 1.0
-$scaleBlur = 0.05
+$scaleBlur = 0.25
 
 [Preset]
 name = 1600x900
@@ -71,7 +72,7 @@ $gameHeight = 720
 $internalRes = 1
 $dither = 0.1
 $scaleShader = 1.0
-$scaleBlur = 0.05
+$scaleBlur = 0.25
 
 [Preset]
 name = 2560x1440 (Native x2)
@@ -82,7 +83,7 @@ $gameHeight = 720
 $internalRes = 1.5
 $dither = 0.1
 $scaleShader = 1.0
-$scaleBlur = 0.1
+$scaleBlur = 0.5
 
 [Preset]
 name = 2560x1440 (Native x2) x2 sub scaling
@@ -92,8 +93,8 @@ $gameWidth = 1280
 $gameHeight = 720
 $internalRes = 2
 $dither = 0.15
-$scaleShader = 1.0
-$scaleBlur = 0.15
+$scaleShader = 71.0
+$scaleBlur = 0.5
 
 [Preset]
 name = 3200x1800
@@ -104,7 +105,7 @@ $gameHeight = 720
 $internalRes = 1
 $dither = 0.2
 $scaleShader = 1.0
-$scaleBlur = 0.1
+$scaleBlur = 0.75
 
 [Preset]
 name = 3840x2160 (4k - Native x3)
@@ -115,7 +116,7 @@ $gameHeight = 720
 $internalRes = 1
 $dither = 0.2
 $scaleShader = 1.0
-$scaleBlur = 0.5
+$scaleBlur = 0.75
 
 [Preset]
 name = 3840x2160 (4k - Native x3) x2 sub scaling
@@ -126,7 +127,7 @@ $gameHeight = 720
 $internalRes = 1.5
 $dither = 0.25
 $scaleShader = 1.0
-$scaleBlur = 0.5
+$scaleBlur = 1.0
 
 [Preset]
 name = 5120x2880
@@ -137,7 +138,7 @@ $gameHeight = 720
 $internalRes = 1
 $dither = 0.25
 $scaleShader = 1.0
-$scaleBlur = 0.25
+$scaleBlur = 1.0
 // Enthusiast
 
 [Preset]
@@ -149,7 +150,7 @@ $gameHeight = 720
 $internalRes = 1
 $dither = 0.25
 $scaleShader = 1.0
-$scaleBlur = 0.5
+$scaleBlur = 1.5
 
 [Preset]
 name = 10240x5760
@@ -160,7 +161,7 @@ $gameHeight = 720
 $internalRes = 1
 $dither = 0.25
 $scaleShader = 1.0
-$scaleBlur = 1.0
+$scaleBlur = 1.5
 
 
 [TextureRedefine]

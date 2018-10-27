@@ -8,7 +8,7 @@ const float scaleShader = $scaleShader;
 const float scaleBlur = $scaleBlur;
 
 
-const int sampleScale = 8;
+const int sampleScale = 4;
 const float lightBloom = 0.95; 
 highp float lineRand(vec2 co)
 {

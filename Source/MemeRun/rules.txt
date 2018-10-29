@@ -96,34 +96,7 @@ overwriteWidth = ($width/$gameWidth) * 1280
 overwriteHeight = ($height/$gameHeight) * 720
 
 [TextureRedefine]
-width = 1280
-height = 720
-overwriteWidth = ($width/$gameWidth) * 1024
-overwriteHeight = ($height/$gameHeight) * 512
-
-[TextureRedefine]
-width = 1280
-height = 720
-overwriteWidth = ($width/$gameWidth) * 512
-overwriteHeight = ($height/$gameHeight) * 512
-
-[TextureRedefine]
-width = 1280
-height = 720
-overwriteWidth = ($width/$gameWidth) * 59
-overwriteHeight = ($height/$gameHeight) * 131
-
-[TextureRedefine]
-width = 1280
-height = 720
-overwriteWidth = ($width/$gameWidth) * 68
-overwriteHeight = ($height/$gameHeight) * 71
-
-[TextureRedefine]
-width = 1280
-height = 720
+width = 854
+height = 480
 overwriteWidth = ($width/$gameWidth) * 854
 overwriteHeight = ($height/$gameHeight) * 480
-
-
-

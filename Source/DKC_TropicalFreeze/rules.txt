@@ -124,8 +124,9 @@ $gameHeight = 720
 [TextureRedefine]
 width = 1280
 height = 720
-#formats = 0x80e,0x031,0x001,0x01a
+#formats = 0x80e,0x001,0x01a
 tileModesExcluded = 0x001
+formatsExcluded = 0x031
 overwriteWidth = ($width/$gameWidth) * 1280
 overwriteHeight = ($height/$gameHeight) * 720
 
@@ -164,6 +165,7 @@ overwriteHeight = ($height/$gameHeight) * 368
 width = 640
 height = 360
 #formats = 0x80e,0x01a
+tileModesExcluded = 0x001 # For Video Playback
 overwriteWidth = ($width/$gameWidth) * 640
 overwriteHeight = ($height/$gameHeight) * 360
 

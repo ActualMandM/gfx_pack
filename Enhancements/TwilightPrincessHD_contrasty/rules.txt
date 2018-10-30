@@ -136,3 +136,25 @@ $vibrance = 0.35
 $crushContrast = 0.00
 $bleach = 0.85
 $sharp_mix = 0.3
+
+[Preset]
+name = Compensate exposure patch
+$redShadows = 0.99
+$greenShadows = 0.99
+$blueSadows = 1.02
+$redMid = 0.95
+$greenMid = 0.97
+$blueMid = 1.04
+$redHilight = 0.99
+$greenHilight =1.0
+$blueHilight = 1.01
+
+$contrastCurve = 0.25
+$hazeFactor = 0.71
+$bloom = 0.85
+$gamma = 1.35
+$exposure = 1.1
+$vibrance = 1.25
+$crushContrast = 0.00
+$bleach = 0.85
+$sharp_mix = 0.3

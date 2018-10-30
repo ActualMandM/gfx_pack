@@ -49,6 +49,27 @@ $crushContrast = 0.0
 $bleach = 0.85
 $sharp_mix = 0.15
 
+[Preset]
+name = Colorful 
+$redShadows = 0.96
+$greenShadows = 0.97
+$blueSadows = 1.01
+$redMid = 0.94
+$greenMid = 0.96
+$blueMid = 1.01
+$redHilight = 0.97
+$greenHilight = 0.99
+$blueHilight = 1.01
+
+$contrastCurve = 0.25
+$hazeFactor = 0.1
+$bloom = 1.0
+$gamma = 1.075
+$exposure = 1.01
+$vibrance = 0.5
+$crushContrast = 0.0
+$bleach = 0.85
+$sharp_mix = 0.05
 
 [Preset]
 name = Warm

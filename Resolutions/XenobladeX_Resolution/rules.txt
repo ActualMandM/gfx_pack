@@ -1,8 +1,8 @@
 [Definition]
 titleIds = 0005000010116100,00050000101C4C00,00050000101C4D00
-name = Resolution
-path = "Xenoblade Chronicles X/Graphics/Resolution"
-description = Changes the resolution of the game. Made by getdls.
+name = Resolution Advanced
+path = "Xenoblade Chronicles X/Graphics/Resolution Advanced"
+description = Changes the resolution of the game. Made by getdls.|Modified and updated to v5 by Lemon King.
 version = 5
 
 [Default]
@@ -45,12 +45,6 @@ name = 4320p (8k)
 category = Resolution
 #$width = 7680
 #$height = 4320
-
-[Preset]
-name = 720x480
-category = Resolution
-$width = 720
-$height = 480
 
 [Preset]
 name = 1360x768
@@ -315,8 +309,8 @@ overwriteHeight = ($height/$gameHeight) * (360*$internalScale)
 width = 512
 height = 512
 formats = 0x005
-overwriteWidth = $shadowScale * 512
-overwriteHeight = $shadowScale * 512
+overwriteWidth = $shadowScale * 1024
+overwriteHeight = $shadowScale * 1024
 
 [TextureRedefine]
 width = 512

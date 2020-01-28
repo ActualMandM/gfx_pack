@@ -2,7 +2,7 @@
 titleIds = 0005000010116100,00050000101C4C00,00050000101C4D00
 name = Graphics
 path = "Xenoblade Chronicles X/Graphics"
-description = Changes the resolution of the game. Made by getdls.|Modified and updated to v5 by Lemon King.
+description = Changes the resolution of the game. Made by getdls and Lemon King.
 version = 5
 
 [Default]
@@ -424,8 +424,8 @@ overwriteHeight = ($height/$gameHeight) * (255*$internalScale)
 [TextureRedefine] # skell depth
 width = 192
 height = 96
-overwriteWidth = ($width/$gameWidth) * (192*$internalScale)
-overwriteHeight = ($height/$gameHeight) * (96*$internalScale)
+overwriteWidth = ($width/$gameWidth) * (192*$skellViewScale)
+overwriteHeight = ($height/$gameHeight) * (96*$skellViewScale)
 
 [TextureRedefine] # Bloom 2nd
 width = 160
@@ -498,15 +498,15 @@ overwriteHeight = ($height/$gameHeight) * (64*$internalScale)
 width = 64
 height = 32
 formats = 0x816,0x806 #0x820,0x816 #,0x035,0x034,0x033,0x032,0x031
-overwriteWidth = ($width/$gameWidth) * (64*$internalScale)
-overwriteHeight = ($height/$gameHeight) * (32*$internalScale)
+overwriteWidth = ($width/$gameWidth) * (64*$skellViewScale)
+overwriteHeight = ($height/$gameHeight) * (32*$skellViewScale)
 
 [TextureRedefine] #skell view
 width = 40
 height = 24
 #formats =
-overwriteWidth = ($width/$gameWidth) * (40*$internalScale)
-overwriteHeight  = ($height/$gameHeight) * (24*$internalScale)
+overwriteWidth = ($width/$gameWidth) * (40*$skellViewScale)
+overwriteHeight  = ($height/$gameHeight) * (24*$skellViewScale)
 
 [TextureRedefine]
 width = 32

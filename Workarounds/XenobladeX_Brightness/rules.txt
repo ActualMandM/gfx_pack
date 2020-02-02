@@ -33,17 +33,25 @@ $postExposure:float = 1.0
 $vibrance:float = 0.0
 
 [Preset]
+name = Increased contrast no colour change 
+category = Standard presets
+$contrastCurve:float = 0.2
+$exposure:float = 1.1
+$postExposure:float = 1.05
+$vibrance:float = 0.0
+
+[Preset]
 name = Saturation and contrast 1.25 - Darker nights
 category = Standard presets
 $contrastCurve:float = 0
 $exposure:float = 1.3
 $postExposure:float = 1.1
-$vibrance:float = 0.35
+$vibrance:float = 0.3
 
 [Preset]
 name = Saturation and contrast 1.5 - Darker Nights
 category = Standard presets
-$contrastCurve:float = 0.000
+$contrastCurve:float = 0.0
 $exposure:float = 1.55
 $postExposure:float = 1.15
 $vibrance:float = 0.45
@@ -61,11 +69,13 @@ category = Exposure and brightness fix
 condition = $isCustom == 1
 $exposure:float = 1.0
 
+[Preset]
 name = 10% less exposure
 category = Exposure and brightness fix 
 condition = $isCustom == 1
 $exposure:float = 0.9
 
+[Preset]
 name = 15% less exposure
 category = Exposure and brightness fix 
 condition = $isCustom == 1
@@ -83,11 +93,13 @@ category = Exposure and brightness fix
 condition = $isCustom == 1
 $exposure:float = 1.05
 
+[Preset]
 name = 10% more exposure
 category = Exposure and brightness fix
 condition = $isCustom == 1
 $exposure:float = 1.1
 
+[Preset]
 name = 15% more exposure
 category = Exposure and brightness fix 
 condition = $isCustom == 1
@@ -137,11 +149,13 @@ category = Saturation - Darkens image
 condition = $isCustom == 1
 $vibrance:float = 0.05
 
+[Preset]
 name = 10% more saturation
 category = Saturation - Darkens image
 condition = $isCustom == 1
 $vibrance:float = 0.1
 
+[Preset]
 name = 15% more saturation
 category = Saturation - Darkens image
 condition = $isCustom == 1
@@ -185,17 +199,27 @@ category = Contrast
 condition = $isCustom == 1
 $contrastCurve:float = 0.0
 
+
+
+[Preset]
+name =  20 % less contrast
+category = Contrast
+condition = $isCustom == 1
+$contrastCurve:float = -0.2
+
 [Preset]
 name = 5% more contrast
 category = Contrast
 condition = $isCustom == 1
 $contrastCurve:float = 0.05
 
+[Preset]
 name = 10% more contrast
 category = Contrast
 condition = $isCustom == 1
 $contrastCurve:float = 0.1
 
+[Preset]
 name = 15% more contrast
 category = Contrast
 condition = $isCustom == 1
@@ -238,11 +262,13 @@ category = Exposure after colour grading
 condition = $isCustom == 1
 $postExposure:float = 1.0
 
+[Preset]
 name = 10% less post Exposure
 category = Exposure after colour grading
 condition = $isCustom == 1
 $postExposure:float = 0.9
 
+[Preset]
 name = 15% less post Exposure
 category = Exposure after colour grading
 condition = $isCustom == 1
@@ -260,11 +286,13 @@ category = Exposure after colour grading
 condition = $isCustom == 1
 $postExposure:float = 1.05
 
+[Preset]
 name = 10% more post Exposure
 category = Exposure after colour grading
 condition = $isCustom == 1
 $postExposure:float = 1.1
 
+[Preset]
 name = 15% more post Exposure
 category = Exposure after colour grading
 condition = $isCustom == 1

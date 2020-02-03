@@ -1,0 +1,487 @@
+[Definition]
+titleIds = 000500001019C800,000500001019E600,000500001019E500
+name = Graphics
+path = "The Legend of Zelda: Twilight Princess HD/Graphics"
+description = Changes the resolution of the game.
+version = 5
+
+[Default] # 
+$width:float = 1920.0
+$height:float = 1080.0
+$gameWidth:float = 1920.0
+$gameHeight:float = 1080.0
+$dither:float = 0.01
+$scaleShader:float = 1.0
+$scaleBlur:float = 0.05
+$verticalRes:float = 1.0
+$internalRes:float = 1.0
+$mapRes:float = 1.0
+$shadowRes:float = 1.0
+$aspectRatio:float = (16.0/9.0)
+$UIAspectX:float = 1.0
+$UIAspectY:float = 1.0
+$UItransp:float = 1.0
+
+
+[Preset]
+name = 1920x1080 (16:9)
+category = Resolution
+$width:float = 1920.0
+$height:float = 1080.0
+
+[Preset]
+name = 2560x1440 (16:9)
+category = Resolution
+$width:float = 2560.0
+$height:float = 1440.0
+
+[Preset]
+name = 2732x1536 (16:9)
+category = Resolution
+$width:float = 2732.0
+$height:float = 1536.0
+
+[Preset]
+name = 3200x1800 (16:9)
+category = Resolution
+$width:float = 3200.0
+$height:float = 1800.0
+
+[Preset]
+name = 3840x2160 (16:9)
+category = Resolution
+$width:float = 3840.0
+$height:float = 2160.0
+
+[Preset]
+name = 5120x2880 (16:9)
+category = Resolution
+$width:float = 5120.0
+$height:float = 2880.0
+
+[Preset]
+name = -- 21:9 -- resolutions 
+category = Resolution
+$width:float = 2560.0
+$height:float = 1080.0
+$aspectRatio:float = (64.0 / 27.0)
+$UIAspectX:float = (1920.0 / 1080.0) / ( 2560.0 / 1080.0 )
+
+[Preset]
+name = 2560x1080 (21:9)
+category = Resolution
+$width:float = 2560.0
+$height:float = 1080.0
+$aspectRatio:float = (64.0 / 27.0)
+$UIAspectX:float = (1920.0 / 1080.0) / ( 2560.0 / 1080.0 )
+
+[Preset]
+name = 3440x1440 (21:9)
+category = Resolution
+$width:float = 3440.0
+$height:float = 1440.0
+$aspectRatio:float = (64.0 / 27.0)
+$UIAspectX:float = (1920.0 / 1080.0) / ( 3440.0 / 1440.0 )
+
+[Preset]
+name = 5120x2160 (21:9)
+category = Resolution
+$width:float = 5120.0
+$height:float = 2160.0
+$aspectRatio:float = (64.0 / 27.0)
+$UIAspectX:float = (1920.0 / 1080.0) / ( 5120.0 / 2160.0 )
+
+[Preset]
+name = -- 16:10 -- resolutions
+category = Resolution
+$width:float = 1440.0
+$height:float = 900.0
+$aspectRatio:float = (1440.0/900.0)
+$UIAspectY:float = ( 1440.0 / 900.0 ) / (1920.0 / 1080.0)
+
+[Preset]
+name = 1440x900 (16:10)
+category = Resolution
+$width:float = 1440.0
+$height:float = 900.0
+$aspectRatio:float = (1440.0/900.0)
+$UIAspectY:float = ( 1440.0 / 900.0 ) / (1920.0 / 1080.0)
+
+[Preset]
+name = 1680x1050 (16:10)
+category = Resolution
+$width:float = 1680.0
+$height:float = 1050.0
+$aspectRatio:float = (1680.0/1050.0)
+$UIAspectY:float = ( 1680.0 / 1050.0 ) / (1920.0 / 1080.0)
+
+[Preset]
+name = 1920x1200 (16:10)
+category = Resolution
+$width:float = 1920.0
+$height:float = 1200.0
+$aspectRatio:float = (1920.0/1200.0)
+$UIAspectY:float = ( 1920.0 / 1200.0 ) / (1920.0 / 1080.0)
+
+[Preset]
+name = 2560x1600 (16:10)
+category = Resolution
+$width:float = 2560.0
+$height:float = 1600.0
+$aspectRatio:float = (2560.0/1600.0)
+$UIAspectY:float = ( 2560.0 / 1600.0 ) / (1920.0 / 1080.0)
+
+[Preset]
+name = 2880x1800 (16:10)
+category = Resolution
+$width:float = 2880.0
+$height:float = 1800.0
+$aspectRatio:float = (2880.0/1800.0)
+$UIAspectY:float = ( 2880.0 / 1800.0 ) / (1920.0 / 1080.0)
+
+[Preset]
+name = 3840x2400 (16:10)
+category = Resolution
+$width:float = 3840.0
+$height:float = 2400.0
+$aspectRatio:float = (3840.0/2400.0)
+$UIAspectY:float = ( 3840.0 / 2400.0 ) / (1920.0 / 1080.0)
+
+[Preset]
+name = 5120x3200 (16:10)
+category = Resolution
+$width:float = 5120.0
+$height:float = 3200.0
+$aspectRatio:float = (5120.0/3200.0)
+$UIAspectY:float = ( 5120.0 / 3200.0 ) / (1920.0 / 1080.0)
+
+[Preset]
+name = -- 48:9 -- resolutions
+category = Resolution
+$width:float = 5760.0
+$height:float = 1080.0
+$aspectRatio:float = (48.0/9.0)
+$UIAspectX = ( 1920.0 / 1080.0 ) / ( 5760.0 / 1080.0 )
+
+[Preset]
+name = 5760x1080 (48:9)
+category = Resolution
+$width:float = 5760.0
+$height:float = 1080.0
+$aspectRatio:float = (48.0/9.0)
+$UIAspectX = ( 1920.0 / 1080.0 ) / ( 5760.0 / 1080.0 )
+
+[Preset]
+name = 7680x1440 (48:9)
+category = Resolution
+$width:float = 7680.0
+$height:float = 1440.0
+$aspectRatio:float = (48.0/9.0)
+$UIAspectX = ( 1920.0 / 1080.0 ) / ( 7680.0 / 1440.0 )
+
+
+[Preset]
+name = Default - No shadow res change 
+category = Shadow resolution 
+$shadowRes:float = 1.0
+
+[Preset]
+name = Default - 2x shadow res
+category = Shadow resolution 
+$shadowRes:float = 2.0
+
+[Preset]
+name = Default - 3x shadow res
+category = Shadow resolution 
+$shadowRes:float = 3.0
+
+
+[Preset]
+name = Default - No vertical res change 
+category = Vertical resolution 
+$verticalRes:float = 1.0
+
+[Preset]
+name = Double vertical Res SSAA
+category = Vertical resolution 
+$verticalRes:float = 2.0
+
+[Preset]
+name = Half vertical Res
+category = Vertical resolution
+$verticalRes:float = 0.5
+
+[Preset]
+name = Default - No internal res change 
+category = Internal resolution 
+$verticalRes:float = 1.0
+
+[Preset]
+name = Double internal res 
+category = Internal resolution 
+$verticalRes:float = 2.0
+
+[Preset]
+name = 0.75 internal res
+category = Internal resolution 
+$verticalRes:float = 0.75
+
+[Preset]
+name = Half internal res
+category = Internal resolution 
+$verticalRes:float = 0.5
+
+[Preset]
+name = Default - No map SSAA
+category = Map resolution 
+$mapRes:float = 1.0
+
+[Preset]
+name = Map SSAA x2 
+category = Map resolution 
+$mapRes:float = 2.0
+
+[Preset]
+name = Map SSAA x3 
+category = Map resolution 
+$mapRes:float = 3.0
+
+[Preset]
+name = Default - No UI transp
+category = UI 
+$UItransp:float = 1.0
+
+[Preset]
+name = UI 5% transp
+category = UI 
+$UItransp:float = 0.95
+
+[Preset]
+name = UI 10% transp
+category = UI 
+$UItransp:float = 0.90
+
+
+[TextureRedefine]
+width = 1920
+height = 1088
+#formats = 0x011,0x01a
+overwriteWidth = ($width/$gameWidth) * 1920 
+overwriteHeight = ($height/$gameHeight) * (1088 * $verticalRes)
+
+[TextureRedefine]
+width = 1920
+height = 1080
+#formats =
+overwriteWidth = ($width/$gameWidth) * 1920
+overwriteHeight = ($height/$gameHeight) * (1080 * $verticalRes)
+
+[TextureRedefine]
+width = 1280
+height = 720
+#formats =
+overwriteWidth = ($width/$gameWidth) * 1280
+overwriteHeight = ($height/$gameHeight) * 720
+
+[TextureRedefine]
+width = 960
+height = 544
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * (960*$internalRes) 
+overwriteHeight = ($height/$gameHeight) * (544*$internalRes) 
+
+[TextureRedefine]
+width = 960
+height = 540
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * (960*$internalRes) 
+overwriteHeight = ($height/$gameHeight) * (540*$internalRes) 
+
+[TextureRedefine]
+width = 960
+height = 544
+formats = 0x011
+overwriteWidth = ($width/$gameWidth) * (960*$internalRes) 
+overwriteHeight = ($height/$gameHeight) * (544*$internalRes) 
+
+[TextureRedefine]
+width = 960
+height = 540
+formats = 0x011
+overwriteWidth = ($width/$gameWidth) * (960*$internalRes) 
+overwriteHeight = ($height/$gameHeight) * (540*$internalRes) 
+
+[TextureRedefine]
+width = 960
+height = 544
+formats = 0x007
+overwriteWidth = ($width/$gameWidth) * (960*$internalRes)
+overwriteHeight = ($height/$gameHeight) * (544*$internalRes)
+
+[TextureRedefine]
+width = 960
+height = 540
+formats = 0x007
+overwriteWidth = ($width/$gameWidth) * (960*$internalRes)
+overwriteHeight = ($height/$gameHeight) * (540*$internalRes)
+
+[TextureRedefine]
+width = 864
+height = 480
+#formats =
+overwriteWidth = ($width/$gameWidth) * 864
+overwriteHeight = ($height/$gameHeight) * 480
+
+[TextureRedefine]
+width = 854
+height = 480
+#formats =
+overwriteWidth = ($width/$gameWidth) * 854
+overwriteHeight = ($height/$gameHeight) * 480
+
+[TextureRedefine] #shadows horsie
+width = 768
+height = 768
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * (768 * $shadowRes)
+overwriteHeight = ($height/$gameHeight) * (768 * $shadowRes)
+
+[TextureRedefine] #
+width = 1376
+height = 784
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * (1376 * $mapRes)
+overwriteHeight = ($height/$gameHeight) * (784 * $mapRes)
+
+[TextureRedefine] #large map rounding
+width = 1345
+height = 773
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * (1345 * $mapRes)
+overwriteHeight = ($height/$gameHeight) * (773 * $mapRes)
+
+[TextureRedefine] #large map 8 rounding
+width = 608
+height = 352
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * (608 * $mapRes)
+overwriteHeight = ($height/$gameHeight) * (352 * $mapRes)
+
+[TextureRedefine] # Large map
+width = 598
+height = 343
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * (598 * $mapRes)
+overwriteHeight = ($height/$gameHeight) * (343 * $mapRes)
+
+[TextureRedefine] # bloom n cutscene
+width = 480
+height = 272
+#formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * (480*$internalRes)
+overwriteHeight = ($height/$gameHeight) * (272*$internalRes)
+
+[TextureRedefine] # bloom n cutscene
+width = 480
+height = 270
+#formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * (480*$internalRes)
+overwriteHeight = ($height/$gameHeight) * (270*$internalRes)
+
+[TextureRedefine] #
+width = 448
+height = 384
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * 448
+overwriteHeight = ($height/$gameHeight) * 384
+
+[TextureRedefine] # Map
+width = 442
+height = 383
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * 442
+overwriteHeight = ($height/$gameHeight) * 383
+
+[TextureRedefine]
+width = 435
+height = 381
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * 435
+overwriteHeight = ($height/$gameHeight) * 381
+
+[TextureRedefine] #Wolf shadows
+width = 384
+height = 384
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * (384 *$shadowRes)
+overwriteHeight = ($height/$gameHeight) * (384 * $shadowRes)
+
+[TextureRedefine] #GUI map +8
+width = 320
+height = 288
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * 320
+overwriteHeight = ($height/$gameHeight) * 288
+
+[TextureRedefine] # map
+width = 290
+height = 280
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * 290
+overwriteHeight = ($height/$gameHeight) * 280
+
+[TextureRedefine] #
+width = 290
+height = 280
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * 290
+overwriteHeight = ($height/$gameHeight) * 280
+
+[TextureRedefine] # Gui
+width = 282
+height = 272
+#formats =
+overwriteWidth = ($width/$gameWidth) * 282
+overwriteHeight = ($height/$gameHeight) * 272
+
+[TextureRedefine] # Gui
+width = 832
+height = 720
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * 832
+overwriteHeight = ($height/$gameHeight) * 720
+
+[TextureRedefine] # Gui
+width = 813
+height = 718
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * 813
+overwriteHeight = ($height/$gameHeight) * 718
+
+[TextureRedefine] # map
+width = 384
+height = 320
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * (384 * $mapRes)
+overwriteHeight = ($height/$gameHeight) * (320 * $mapRes)
+
+[TextureRedefine] # map
+width = 362
+height = 319
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * (362 * $mapRes)
+overwriteHeight = ($height/$gameHeight) * (319 * $mapRes)
+
+[TextureRedefine] # map endgame
+width = 832
+height = 720
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * (832 * $mapRes)
+overwriteHeight = ($height/$gameHeight) * (720 * $mapRes)
+
+[TextureRedefine] # map endgame
+width = 802
+height = 512
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * (802 * $mapRes)
+overwriteHeight = ($height/$gameHeight) * (512 * $mapRes)

@@ -11,9 +11,10 @@ moduleMatches = 0xF882D5CF, 0x30B6E091, 0xAB97DE6B ; 1.0.1E, 1.0.2U, 1.0.1U
 ; WHAT : Force the chest quality
 
 _goForced:
-li r28, $forced
-cmpwi r28, 4
-bge exit_goForced
+li r28, $treasure
+li r4, $forced
+cmpwi r4, 1
+bne exit_goForced
 mr. r28, r28
 blr
 exit_goForced:

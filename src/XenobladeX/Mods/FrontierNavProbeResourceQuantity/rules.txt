@@ -6,11 +6,10 @@ description = Affect the quantity of the FrontierNav income for the resources.
 version = 5
 
 [Default]
-$mod = 1
+$mod = 2
 
 [Preset]
 name = "x2"
-$mod = 2
 
 [Preset]
 name = "x5"

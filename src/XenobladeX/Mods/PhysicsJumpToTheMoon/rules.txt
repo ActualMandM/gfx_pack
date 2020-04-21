@@ -12,7 +12,6 @@ $vert = 1.0
 [Preset]
 name = "1.0 (default)"
 category = Horizontal Velocity
-$horz = 1.0
 
 [Preset]
 name = "1.5"
@@ -38,7 +37,6 @@ $horz = 3.0
 [Preset]
 name = "1.0 (default)"
 category = VerticalVelocity
-$vert = 1.0
 
 [Preset]
 name = "1.02"

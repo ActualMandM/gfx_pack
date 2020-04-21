@@ -11,8 +11,6 @@ $checkStrengthen = 7
 
 [Preset]
 name = "Normal"
-$checkSelectItem = 5
-$checkStrengthen = 7
 
 [Preset]
 name = "CHEAT - Ignore Miranium and resources requirements"

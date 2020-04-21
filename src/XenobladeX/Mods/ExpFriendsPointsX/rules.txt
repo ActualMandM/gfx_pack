@@ -6,11 +6,10 @@ description = More Friends points gained when activating a Soul Voice Link durin
 version = 5
 
 [Default]
-$mod = 0
+$mod = 100
 
 [Preset]
 name = "+100"
-$mod = 100
 
 [Preset]
 name = "+250"

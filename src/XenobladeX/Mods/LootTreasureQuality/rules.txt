@@ -6,40 +6,29 @@ description = Select the preferred treasure quality you want to loot (see readme
 version = 5
 
 [Default]
-$treasure:int = 3
-$forced:int = 4
+$treasure:int = 0
+$forced:int = 0
 
 [Preset]
 name = "Gold quality"
 $treasure:int = 1
-$forced:int = 4
 
 [Preset]
 name = "Silver quality"
 $treasure:int = 2
-$forced:int = 4
 
 [Preset]
 name = "Bronze quality"
 $treasure:int = 3
-$forced:int = 4
 
 [Preset]
-name = "Gold quality (FORCED)"
-$treasure:int = 1
+name = "No treasure"
+
+[Preset]
+name = "Yes"
+category = Forced
 $forced:int = 1
 
 [Preset]
-name = "Silver quality (FORCED)"
-$treasure:int = 2
-$forced:int = 2
-
-[Preset]
-name = "Bronze quality (FORCED)"
-$treasure:int = 3
-$forced:int = 3
-
-[Preset]
-name = "No treasure (FORCED)"
-$treasure:int = 0
-$forced:int = 0
+name = "No"
+category = Forced

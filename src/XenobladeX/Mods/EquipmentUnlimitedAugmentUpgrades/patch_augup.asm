@@ -36,14 +36,6 @@ moduleMatches = 0xF882D5CF ; 1.0.1E
 ; ----------------------------------------------------------------------------
 ; WHO  : menu::MenuArmsCompanyAffixStrengthen::CheckAffixStrengthen
 ; WHAT : Unlimited upgrades (affix selection menu)
-; r3
-; 1: Cannot apply changes to this character
-; 2: Cannot apply changes to this skell
-; 3: Cannot upgrade any further
-; 4: No upgrades remaining
-; 5: No battle traits
-; 6: Insuficient credits
-; 7: Insuficient materials
 
 0x02A72134 = li r10, 99 ; Ignore upgrades counter
 0x02A723B4 = li r3, $checkStrengthen

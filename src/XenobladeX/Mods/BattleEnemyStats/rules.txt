@@ -6,11 +6,10 @@ description = Apply a percent modificator on enemies stats (HP, Melee Attack, Me
 version = 5
 
 [Default]
-$mod = 0.001
+$mod = 0.0005
 
 [Preset]
 name = Set at 50%
-$mod = 0.0005
 
 [Preset]
 name = Set at 75%

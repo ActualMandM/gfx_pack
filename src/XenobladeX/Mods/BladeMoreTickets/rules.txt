@@ -6,40 +6,34 @@ description = Increase the Tickets gained with Squad tasks and missions.|Uncappe
 version = 5
 
 [Default]
-$mult = 1
-$uncap = 0
-
-[Preset]
-name = "Gain more Tickets (x2)"
 $mult = 2
 $uncap = 0
 
 [Preset]
+name = "Gain more Tickets (x2)"
+
+[Preset]
 name = "Gain more Tickets (x5)"
 $mult = 5
-$uncap = 0
 
 [Preset]
 name = "Gain more Tickets (x10)"
 $mult = 10
-$uncap = 0
 
 [Preset]
 name = "Gain more Tickets (x100)"
 $mult = 100
-$uncap = 0
 
 [Preset]
-name = "Gain more Tickets (x10 Uncapped)"
-$mult = 10
-$uncap = 1
-
-[Preset]
-name = "Gain more Tickets (x100 Uncapped)"
-$mult = 100
-$uncap = 1
-
-[Preset]
-name = "Gain more Tickets (x1000 Uncapped)"
+name = "Gain more Tickets (x1000)"
 $mult = 1000
+
+[Preset]
+name = Yes
+category = "Capped to BLADE level"
+
+[Preset]
+name = No
+category = "Capped to BLADE level"
 $uncap = 1
+

@@ -12,13 +12,11 @@ $sub:int = 0
 [Preset] ###########################################
 name = "Ground Weapons"
 category = Equipment Type
-$type:int = 2
 
 [Preset]
 name = "Random"
 category = Ground Weapon
 condition = $type == 2
-$sub:int = 0
 
 [Preset]
 name = "Photon Sabers"
@@ -101,7 +99,6 @@ $type:int = 4
 name = "Random"
 category = Ground Armor
 condition = $type == 4
-$sub:int = 0
 
 [Preset]
 name = "Head"
@@ -137,7 +134,6 @@ $sub:int = 5
 name = "Skell weapons (random only)"
 category = Equipment Type
 $type:int = 6
-$sub:int = 0
 
 [Preset] ###########################################
 name = "Skell armors"
@@ -148,7 +144,6 @@ $type:int = 8
 name = "Random"
 category = Skell Armor
 condition = $type == 8
-$sub:int = 0
 
 [Preset]
 name = "Head"

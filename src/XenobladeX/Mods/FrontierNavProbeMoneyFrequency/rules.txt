@@ -6,11 +6,10 @@ description = Affect the frequency of the FrontierNav income for the Money (Vani
 version = 5
 
 [Default]
-$mod = 15
+$mod = 1
 
 [Preset]
 name = "Every minute"
-$mod = 1
 
 [Preset]
 name = "Every 2 minutes"

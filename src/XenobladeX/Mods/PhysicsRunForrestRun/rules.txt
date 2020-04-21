@@ -6,11 +6,10 @@ description = Increase the speed of sprint.
 version = 5
 
 [Default]
-$mod = 1.0
+$mod = 0.75
 
 [Preset]
 name = "Speed x1.5"
-$mod = 0.75
 
 [Preset]
 name = "Speed x2"

@@ -64,6 +64,3 @@ blr
 0x021AE420 = bla _setSubSA
 
 ;0x021AD9A4 = li r3, 4 ; force index
-;;0x021AE418 = li r3, 0
-;0x021AE09C = li r3, 2
-;;0x021ADD20 = li r3, 0

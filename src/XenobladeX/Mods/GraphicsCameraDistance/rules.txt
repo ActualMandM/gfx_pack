@@ -6,15 +6,10 @@ description = Affect the default distance of the camera (Vanilla zoom is 0).
 version = 5
 
 [Default]
-$mod = 0.0
-
-[Preset]
-name = "Zoom 0"
-$mod = 0.0
+$mod = 2.0
 
 [Preset]
 name = "Zoom 2"
-$mod = 2.0
 
 [Preset]
 name = "Zoom 5"

@@ -14,11 +14,8 @@ moduleMatches = 0xF882D5CF, 0x30B6E091 ; 1.0.1E, 1.0.2U
 0x023ABA68 = li r5, 60 ; force 0x24 - UNLOCK
 0x023ABC10 = nop ; isHost
 0x023A0484 = nop ; isHost
-;0x023ABC94 = nop ; getServerTimeSecRegion - UNLOCK
 0x023ABCAC = nop ; compare with 0x28 - UNLOCK
 0x023ABCB8 = nop ; compare with 0x2C - UNLOCK
-;_gotoJoin = 0x023ABD00 ; UNLOCK
-;0x023ABCBC = b _gotoJoin ; UNLOCK
 
 ;##################### BLADE Home Terminal (for Squad Quest Selection)
 
@@ -80,26 +77,9 @@ blr
 [XCX_SQUADMISSIONS_1E]
 moduleMatches = 0xF882D5CF ; 1.0.1E
 
-; getLocalTimeSec__Q2_2fw10SocialUtilSFv > timestamp depuis 1er janvier 2000
-; r3 = 008a6374 --> 00000000
-; r4 = 7952f1fb --> 255a9447 > 626 693 191 (secondes) date du système
-; 10/11/2019 --> 255a9447 > 626693191 > 174081 heures > 7253 jours > 19 ans
-; 10/11/2018 --> 23796388 > 595157896
-; 01/01/2000 = 946681200
-; 11/11/2019 = 1573426800 --> 626745600 (0x255B6100)
-
 ; getServerTimeSec__Q2_2nt10CNetLibNexCFRUL
 0x0295EA10 = nop
 0x0295EA14 = li r0, 42
-;0x02892000 = _getLocalTimeSec:
-;0x0295EAA4 = bl _getLocalTimeSec
-
-;0x023AB848
-;0x023ABC30
-;0x023ABA58 = mulli     r10, r6, 0xA
-;0x023ABA60 = mr r0, r10
-;0x023ABC38 = nop ; remove waiting time
-
 
 ; menu::MenuSquadMission::process((void))
 0x02BFC7C0 = li r11, 1 ; garder affichée la liste des tasks en bas à droite

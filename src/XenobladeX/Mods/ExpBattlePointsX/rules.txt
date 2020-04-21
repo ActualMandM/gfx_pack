@@ -6,11 +6,10 @@ description = Change the amount of Battle points gained when a new level (or cla
 version = 5
 
 [Default]
-$mod = 1
+$mod = 2
 
 [Preset]
 name = "Quantity x2"
-$mod = 2
 
 [Preset]
 name = "Quantity x5"

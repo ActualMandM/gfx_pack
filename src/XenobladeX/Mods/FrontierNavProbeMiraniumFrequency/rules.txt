@@ -6,11 +6,10 @@ description = Affect the frequency of the FrontierNav income for the Miranium (V
 version = 5
 
 [Default]
-$mod = 30
+$mod = 1
 
 [Preset]
 name = "Every minute"
-$mod = 1
 
 [Preset]
 name = "Every 2 minutes"

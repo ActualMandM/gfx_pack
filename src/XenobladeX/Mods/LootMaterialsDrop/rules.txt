@@ -6,11 +6,10 @@ description = Affect the materials minimum drop ratio in the loots.
 version = 5
 
 [Default]
-$ratio = 50
+$ratio = 100
 
 [Preset]
 name = "Set minimum drop to 100% (always drop)"
-$ratio = 100
 
 [Preset]
 name = "Set minimum drop to 70%"

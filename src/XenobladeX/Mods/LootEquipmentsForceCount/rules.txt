@@ -12,18 +12,15 @@ $cnt1 = 0
 
 [Preset]
 name = "Always 3 equipments"
-$cnt3 = 0
 $cnt2 = 100
 $cnt1 = 100
 
 [Preset]
 name = "Always 2 equipments"
 $cnt3 = 100
-$cnt2 = 0
 $cnt1 = 100
 
 [Preset]
 name = "Always 1 equipment"
 $cnt3 = 100
 $cnt2 = 100
-$cnt1 = 0

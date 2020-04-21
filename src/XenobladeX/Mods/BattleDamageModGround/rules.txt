@@ -6,11 +6,10 @@ description = Increase the ground damage done by your team (skells not impacted)
 version = 5
 
 [Default]
-$mult = 1
+$mult = 2
 
 [Preset]
 name = Damage x 2
-$mult = 2
 
 [Preset]
 name = Damage x 10

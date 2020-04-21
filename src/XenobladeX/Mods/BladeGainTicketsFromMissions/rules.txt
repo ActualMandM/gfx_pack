@@ -10,7 +10,6 @@ $mission = 5
 
 [Preset]
 name = "Gain from DLC missions (money/100)"
-$mission = 5
 
 [Preset]
 name = "Gain from TA missions (exp)"

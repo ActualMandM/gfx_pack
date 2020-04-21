@@ -6,11 +6,10 @@ description = Change the amount of Inner Exp points gained in battle, missions, 
 version = 5
 
 [Default]
-$mod = 1
+$mod = 2
 
 [Preset]
 name = "x2"
-$mod = 2
 
 [Preset]
 name = "x5"

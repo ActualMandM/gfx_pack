@@ -5,8 +5,6 @@ moduleMatches = 0xF882D5CF, 0x30B6E091, 0xAB97DE6B ; 1.0.1E, 1.0.2U, 1.0.1U
 ; WHO  : Battle::CSoulVoiceButtonChallenge::updateInternal((float))
 ; WHAT : Disable QTE (calling Battle::CButtonChallengeManager::CallUI)
 
-; Battle::CSoulVoiceButtonChallenge::applyResult((void))
-; |- SoulVoice::CSoulVoice::addStageLevel((unsigned int, float))
 0x0209BA38 = li r9, 1 ; always good result
 
 ; Auto Apply QTE

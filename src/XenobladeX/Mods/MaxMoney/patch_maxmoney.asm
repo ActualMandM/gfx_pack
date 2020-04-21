@@ -25,12 +25,6 @@ moduleMatches = 0xF882D5CF, 0x30B6E091 ; 1.0.1E, 1.0.2U
 0x027F6E14 = lis r12, 0x3B9B
 0x027F6E18 = addi r12, r12, -0x3601
 
-; __CPR100__getSearchedRentalChar__Q2_2fw15SocialDataStoreCFUiRQ3_2fwJ29J22RentalCharSearchResultT1
-;0x028235E0 = lis r5, 0x3B9B
-;0x028235E4 = addi r5, r5, -0x3601
-;0x028235F0 = lis r25, 0x3B9B
-;0x028235F8 = addi r25, r25, -0x3601
-
 [XCX_MAXMONEY_1U] ##############################################################
 moduleMatches = 0xAB97DE6B ; 1.0.1U
 
